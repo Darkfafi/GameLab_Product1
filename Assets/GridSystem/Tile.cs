@@ -12,5 +12,22 @@ public class Tile : MonoBehaviour {
 		if(other.gameObject.tag == "Player"){
 			Debug.Log(tileGridPosition);
 		}
+		/*
+		if(other.gameObject.tag == "Trap"){
+			containId = 1;
+			Debug.Log(gameObject);
+			other.gameObject.GetComponent<Trap>().AddTile(gameObject);
+			Debug.Log("Woow"); // pass this tile to trap
+		}*/
 	}
+	/*
+	void OnTriggerExit2D(Collider2D other){
+		if(other.gameObject.tag == "Trap"){
+			containId = 0;
+			Debug.Log("bye");
+		}
+	}
+	public void TrapContainedDestroyed(){
+		containId = 0;
+	}*/
 }

@@ -20,7 +20,7 @@ public class TrapSpawner : MonoBehaviour {
 		grid = GetComponent<Grid>();
 		levelGrid = grid.grid;
 
-		List<GameObject> listOfTraps = GetListOfFreeTiles ();
+		List<GameObject> listOfTraps = GetListOfFreeTiles (WALL);
 		GameObject targetTile = listOfTraps[Random.Range(0,listOfTraps.Count)]; // test
 		PlaceTrap (targetTile);
 	}
@@ -52,9 +52,9 @@ public class TrapSpawner : MonoBehaviour {
 		Tile tileProp = tile.GetComponent<Tile> ();
 
 		GameObject trap = new GameObject();
-
+		//plaatsen van trap door middel van te kijken hoeveel grid tiles hij zou innemen. 1 voor 1 te checken of die wel available zijn (als niet break;) if available then build trap. (denk aan age of empire | command and conquer build vlaktes)
 		if(tileProp.typeId == WALL){
-			trap = Resources.Load("Prefabs/Traps/WallTraps/WallTrapPlaceholder") as GameObject; //liefst een random trap ervan
+			trap = Resources.Load("Prefabs/Traps/WallTraps/WallTrapPlaceholder") as GameObject; //liefst een lijst boven aan de code van walltraps waar hij zelf uit kiest.
 			Debug.Log (tileProp.tileGridPosition);
 		}else if (tileProp.typeId == GROUND){
 			Debug.Log("Ground trap");
