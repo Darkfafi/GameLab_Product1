@@ -4,12 +4,14 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	private float speed = 5;
+	private AllAroundSpeed allAroundSpeed;
 
-	// Update is called once per frame
+	void Awake(){
+		allAroundSpeed = GetComponent<AllAroundSpeed> ();
+	}
+
 	void Update () {
-		//Debug.Log (Time.deltaTime);
 		Vector3 velocityControll = new Vector3 (Input.GetAxis ("Horizontal"),Input.GetAxis ("Vertical"),0);
-		rigidbody2D.velocity = velocityControll * speed;
-		//transform.Translate (new Vector2 (Input.GetAxis ("Horizontal"),Input.GetAxis ("Vertical")) * Time.deltaTime * speed);;
+		rigidbody2D.velocity = velocityControll * speed * allAroundSpeed.allAroundSpeed;
 	}
 }

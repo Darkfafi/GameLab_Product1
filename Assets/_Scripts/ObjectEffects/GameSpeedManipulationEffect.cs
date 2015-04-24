@@ -3,13 +3,19 @@ using System.Collections;
 
 public class GameSpeedManipulationEffect : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	GameSpeedFocus gameSpeedFocus;
+	AllAroundSpeed gameObjectSpeed;
+
+	void Start(){
+		gameSpeedFocus = GameObject.Find ("GameController").GetComponent<GameSpeedFocus> ();
+		gameObjectSpeed = GetComponent<AllAroundSpeed>();
+		gameObjectSpeed.allAroundSpeed = gameSpeedFocus.gameSpeed;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Update(){
+		gameObjectSpeed.allAroundSpeed = gameSpeedFocus.gameSpeed;
+		if (gameObject.GetComponent<Animator> () != null) {
+			gameObject.GetComponent<Animator> ().speed = 1 * gameObjectSpeed.allAroundSpeed;
+		}
 	}
 }

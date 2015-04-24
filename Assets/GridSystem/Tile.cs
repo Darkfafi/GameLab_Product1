@@ -12,22 +12,16 @@ public class Tile : MonoBehaviour {
 		if(other.gameObject.tag == "Player"){
 			Debug.Log(tileGridPosition);
 		}
-		/*
-		if(other.gameObject.tag == "Trap"){
-			containId = 1;
-			Debug.Log(gameObject);
-			other.gameObject.GetComponent<Trap>().AddTile(gameObject);
-			Debug.Log("Woow"); // pass this tile to trap
-		}*/
 	}
-	/*
-	void OnTriggerExit2D(Collider2D other){
-		if(other.gameObject.tag == "Trap"){
-			containId = 0;
-			Debug.Log("bye");
-		}
+
+	public void AddTrap(GameObject trap,Quaternion rotation){
+		containId = 1;
+		Debug.Log (rotation);
+		trap = Instantiate (trap, transform.position, rotation) as GameObject; //als tile grid position aan begin van x is dan rotate hem naar rechts
+		trap.GetComponent<Trap> ().currentTile = gameObject;
 	}
-	public void TrapContainedDestroyed(){
+
+	public void EmptyTile(){
 		containId = 0;
-	}*/
+	}
 }
