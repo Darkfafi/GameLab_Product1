@@ -20,7 +20,6 @@ public class Tile : MonoBehaviour {
 
 	public void AddTrap(GameObject trap,Quaternion rotation){
 		containId = 1;
-		//Debug.Log (rotation);
 		trap = Instantiate (trap, transform.position, rotation) as GameObject; //als tile grid position aan begin van x is dan rotate hem naar rechts
 		trap.GetComponent<Trap> ().SetCurrentTile(gameObject);
 	}
@@ -38,11 +37,6 @@ public class Tile : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D other){
 		if(other.gameObject.tag == "Player" && gameObject.tag != "Wall"){
 			pressured = false;//
-		}
-	}
-	void Update(){
-		if(pressured){
-			//Debug.Log(tileGridPosition);
 		}
 	}
 }

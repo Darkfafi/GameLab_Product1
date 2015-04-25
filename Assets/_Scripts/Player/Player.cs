@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
-	
+
 	// Use this for initialization
 	Animator animator;
 
@@ -10,5 +10,10 @@ public class Player : MonoBehaviour {
 		animator = GetComponent<Animator> ();
 		gameObject.AddComponent<AllAroundSpeed> ();
 		gameObject.AddComponent<PlayerMovement> ();
+	}
+
+	void LostLife(){
+		//doorzichtig zet lives uit
+		Debug.Log("Hit marker");
 	}
 }

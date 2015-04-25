@@ -3,31 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 public class Trap : MonoBehaviour {
 
-	public float lifeTimeInSeconds = 5f;
+	public float lifeTimeInSeconds = 5f; // 0 betekend dat het vernietigd word wanneer het zelf erom vraagt
 
-	public float timeSpendInSeconds = 0f;
+	protected float timeSpendInSeconds = 0f;
 
 	protected AllAroundSpeed allAroundSpeed;
+
+	protected Animator animator;
 
 	private GameObject currentTile;
 
 	void Awake(){
+		if(GetComponent<Animator>() != null){
+			animator = GetComponent<Animator>();
+		}
+
 		allAroundSpeed = gameObject.AddComponent<AllAroundSpeed> ();
 		gameObject.AddComponent<GameSpeedManipulationEffect> ();
-	}
-
-	void Start(){
-		StartDestroyCountDown ();
-	}
-
-	void StartDestroyCountDown(){
-
 	}
 
 	protected virtual void Update(){
 		timeSpendInSeconds += Time.deltaTime * allAroundSpeed.allAroundSpeed;
 
-		if(timeSpendInSeconds > lifeTimeInSeconds){
+		if(lifeTimeInSeconds != 0 && timeSpendInSeconds > lifeTimeInSeconds){
 			DestroyTrap();
 		}
 	}

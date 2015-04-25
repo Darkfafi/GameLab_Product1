@@ -7,8 +7,13 @@ public class TrapSpawner : MonoBehaviour {
 	Grid grid;
 
 	GameObject[,] levelGrid;
-	GameObject[,] wallTiles;
-	GameObject[,] groundTiles;
+
+	//Trap place patterns idee: 
+	//dictionary with traps to spawn and time till next trap in the pattern. Counter ++. placeTrap(dictionary[counter]). WaitForNextPlacing(dictionary[counter].time //or something). 
+	//if array out of bound. Pattern vorbij laad nieuwe pattern met cooldown wanneer het moet beginnen.
+	//(time till next trap. //when is the next pattern)
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +25,7 @@ public class TrapSpawner : MonoBehaviour {
 		List<GameObject> listOfTraps = grid.GetListOfFreeTiles (Grid.WALL);
 		GameObject targetTile = listOfTraps[Random.Range(0,listOfTraps.Count)]; // test
 		PlaceTrap (targetTile); 
+
 	}
 
 	bool PlaceTrap(GameObject tile){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
@@ -34,7 +40,7 @@ public class TrapSpawner : MonoBehaviour {
 			trap = Resources.Load("Prefabs/Traps/WallTraps/WallTrapPlaceholder") as GameObject; //liefst een lijst boven aan de code van walltraps waar hij zelf uit kiest.
 			//Debug.Log (tileProp.tileGridPosition);
 		}else if (tileProp.typeId == Grid.GROUND){
-			Debug.Log("Ground trap");
+			trap = Resources.Load("Prefabs/Traps/GroundTraps/SpikeTrap") as GameObject;
 		}
 
 		//tileProp.containId = 1; //lieft dat setten met alles wat het aanraakt als he aangemaakt word.
