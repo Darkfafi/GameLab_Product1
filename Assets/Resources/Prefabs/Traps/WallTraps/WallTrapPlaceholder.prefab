@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21208184}
   - 61: {fileID: 6139688}
   - 50: {fileID: 5024854}
-  - 114: {fileID: 11445292}
+  - 114: {fileID: 11478794}
   m_Layer: 0
   m_Name: WallTrapPlaceholder
   m_TagString: Trap
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 108184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.6023026, y: 3.91638112, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .300000012, y: .300000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .800000012, y: .800000012}
   m_Center: {x: 0, y: 0}
---- !u!114 &11445292
+--- !u!114 &11478794
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -65,9 +65,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 108184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb5c94d34bf3b6f48a8e82316d1f8012, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c12b2739b86a1b4885e1f02a2294c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTimeInSeconds: 5
+  timeSpendInSeconds: 0
+  fireRate: .5
+  projectile: {fileID: 167754, guid: 055eef52e3ec77b44a4ee2d99b1bb065, type: 2}
 --- !u!212 &21208184
 SpriteRenderer:
   m_ObjectHideFlags: 1

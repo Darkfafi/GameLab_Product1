@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 public class Trap : MonoBehaviour {
 
-	public float lifeTimeInSeconds = 2f;
+	public float lifeTimeInSeconds = 5f;
 
 	public float timeSpendInSeconds = 0f;
 
 	protected AllAroundSpeed allAroundSpeed;
 
-	public GameObject currentTile;
+	private GameObject currentTile;
 
 	void Awake(){
 		allAroundSpeed = gameObject.AddComponent<AllAroundSpeed> ();
@@ -24,7 +24,7 @@ public class Trap : MonoBehaviour {
 
 	}
 
-	void Update(){
+	protected virtual void Update(){
 		timeSpendInSeconds += Time.deltaTime * allAroundSpeed.allAroundSpeed;
 
 		if(timeSpendInSeconds > lifeTimeInSeconds){
@@ -35,5 +35,9 @@ public class Trap : MonoBehaviour {
 	void DestroyTrap(){
 		currentTile.GetComponent<Tile> ().EmptyTile ();
 		Destroy (gameObject);
+	}
+
+	public void SetCurrentTile(GameObject tile){
+		currentTile = tile;
 	}
 }

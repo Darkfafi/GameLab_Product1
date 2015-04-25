@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class Grid : MonoBehaviour {
 
+	public const int GROUND = 0;
+	public const int WALL = 1;
+
 	public int width = 14; //21 
 	public int height = 8; //12
 
@@ -45,10 +48,9 @@ public class Grid : MonoBehaviour {
 					gridTile.transform.SetParent(gridHolder.transform);
 
 					gridTile.GetComponent<Tile>().tileGridPosition = new Vector2(xAxis,yAxis);
-					//gridTile.transform.localScale = new Vector3(0.42f,0.413f);
 
-					gridTile.transform.position = new Vector3(((xAxis * gridTile.collider2D.bounds.size.x) + gridTile.collider2D.bounds.size.x / 2),
-					                                          (yAxis * gridTile.collider2D.bounds.size.y) + gridTile.collider2D.bounds.size.y / 2,
+					gridTile.transform.position = new Vector3(((xAxis * gridTile.GetComponent<Tile>().tileSize.x) + gridTile.GetComponent<Tile>().tileSize.x / 2),
+					                                          (yAxis * gridTile.GetComponent<Tile>().tileSize.y) + gridTile.GetComponent<Tile>().tileSize.y / 2,
 					                                          gridTile.transform.position.z);
 					grid[xAxis,yAxis] = gridTile;
 				}
@@ -73,5 +75,52 @@ public class Grid : MonoBehaviour {
 		}
 
 		return gridItem;
+	}
+
+	public List<GameObject> GetListPressuredTiles(bool freeTile = false){
+
+		GameObject currentTile;
+		List<GameObject> listTiles = new List<GameObject>();
+
+		for(int xAxis = 0; xAxis < width; xAxis++){
+			for(int yAxis = 0; yAxis < height; yAxis++){
+				currentTile = grid[xAxis,yAxis];
+				if(currentTile != null && currentTile.GetComponent<Tile>().typeId != WALL){
+					Debug.Log(currentTile.GetComponent<Tile>().pressured);
+					if(currentTile.GetComponent<Tile>().pressured){
+						if(freeTile){
+							if(currentTile.GetComponent<Tile>().containId == 0){
+								listTiles.Add(currentTile);
+							}
+						}else{
+							listTiles.Add(currentTile);
+						}
+					}
+
+				}
+			}
+		}
+		return listTiles;
+	}
+
+	public List<GameObject> GetListOfFreeTiles(int? place = null){
+		Tile tile;;
+		List<GameObject> listOfUseableTiles = new List<GameObject>();
+		
+		for(int xAxis = 0; xAxis < width; xAxis++){
+			for(int yAxis = 0; yAxis < height; yAxis++){
+				if(grid[xAxis,yAxis] != null){
+					tile = grid[xAxis,yAxis].GetComponent<Tile>();
+					if(tile.containId == 0){ //if tile does not already contain a trap 
+						if(tile.typeId == place || place == null){ //if it is equal to the asked place like Wall or Ground etc or not asked for place then all free spaces
+							
+							listOfUseableTiles.Add(tile.gameObject);
+							
+						}
+					}
+				}
+			}
+		}
+		return listOfUseableTiles;
 	}
 }
