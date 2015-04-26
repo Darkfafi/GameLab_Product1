@@ -35,13 +35,14 @@ public class Projectile : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.gameObject.tag != "GroundTile"){
+		if(other.gameObject.GetComponent<Lives>() != null || other.gameObject.tag == "Wall"){
 			if(hitCount != 0){
 				if(other.gameObject.GetComponent<Lives>() != null){
 					other.gameObject.GetComponent<Lives>().AddSubLife(-1);
 				}
 				Destroy (gameObject);
 			}
+
 			hitCount += 1;
 		}
 	}

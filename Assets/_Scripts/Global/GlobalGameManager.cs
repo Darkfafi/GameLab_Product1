@@ -7,9 +7,4 @@ public class GlobalGameManager : MonoBehaviour {
 	void Awake () {
 		gameObject.AddComponent<GameSpeedFocus> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

@@ -8,7 +8,7 @@ public class TrapSpawner : MonoBehaviour {
 
 	GameObject[,] levelGrid;
 
-	GameSpeedManipulationEffect GameSpeedManipulator;
+	protected GameSpeedManipulationEffect GameSpeedManipulator;
 
 	//Trap place patterns idee: 
 	//dictionary with traps to spawn and time till next trap in the pattern. Counter ++. placeTrap(dictionary[counter]). WaitForNextPlacing(dictionary[counter].time //or something). 
@@ -20,34 +20,21 @@ public class TrapSpawner : MonoBehaviour {
 		GameSpeedManipulator = gameObject.AddComponent<GameSpeedManipulationEffect> ();
 	}
 
-	// Use this for initialization
-	void Start () {
+	protected bool PlaceTrap(GameObject trap, GameObject tile = null){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
 
-		//alle trapspawners inhereten deze. De game/wave manager regeld wanneer welke word geadd aan de game als component. Als er bijv 5 van deze component is dan switcht het naar de volgende pattern
-		grid = GetComponent<Grid>();
+		grid = GetComponent<Grid> ();
 		levelGrid = grid.grid;
-		/*
-		List<GameObject> listOfTraps = grid.GetListOfFreeTiles (Grid.WALL);
-		GameObject targetTile = listOfTraps[Random.Range(0,listOfTraps.Count)]; // test
-		PlaceTrap (targetTile); 
-		*/
-	}
-
-	protected bool PlaceTrap(GameObject tile){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
 
 		bool placedTrap = false;
 
-		Tile tileProp = tile.GetComponent<Tile> ();
+		Tile tileProp;
 
-		GameObject trap = new GameObject();
-
-		//plaatsen van trap door middel van te kijken hoeveel grid tiles hij zou innemen. 1 voor 1 te checken of die wel available zijn (als niet break;) if available then build trap. (denk aan age of empire | command and conquer build vlaktes)
-		if(tileProp.typeId == Grid.WALL){
-			trap = Resources.Load("Prefabs/Traps/WallTraps/WallDartTrap") as GameObject; //liefst een lijst boven aan de code van walltraps waar hij zelf uit kiest.
-			//Debug.Log (tileProp.tileGridPosition);
-		}else if (tileProp.typeId == Grid.GROUND){
-			trap = Resources.Load("Prefabs/Traps/GroundTraps/SpikeTrap") as GameObject;
+		if(tile == null){
+			List<GameObject> listOfFreeTiles = grid.GetListOfFreeTiles(trap.GetComponent<Trap>().trapPositionType);
+			tile = listOfFreeTiles[Random.Range(0,listOfFreeTiles.Count)]; // test
 		}
+
+		tileProp = tile.GetComponent<Tile> ();
 
 		//tileProp.containId = 1; //lieft dat setten met alles wat het aanraakt als he aangemaakt word.
 		Quaternion rotationTrap = Quaternion.identity;

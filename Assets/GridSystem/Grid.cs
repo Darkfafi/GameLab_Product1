@@ -86,7 +86,7 @@ public class Grid : MonoBehaviour {
 			for(int yAxis = 0; yAxis < height; yAxis++){
 				currentTile = grid[xAxis,yAxis];
 				if(currentTile != null && currentTile.GetComponent<Tile>().typeId != WALL){
-					Debug.Log(currentTile.GetComponent<Tile>().pressured);
+					//Debug.Log(currentTile.GetComponent<Tile>().pressured);
 					if(currentTile.GetComponent<Tile>().pressured){
 						if(freeTile){
 							if(currentTile.GetComponent<Tile>().containId == 0){
@@ -96,9 +96,11 @@ public class Grid : MonoBehaviour {
 							listTiles.Add(currentTile);
 						}
 					}
-
 				}
 			}
+		}
+		if(listTiles.Count == 0){
+			listTiles.Add(null);
 		}
 		return listTiles;
 	}

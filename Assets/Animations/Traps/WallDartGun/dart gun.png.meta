@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: efa8fc46d45cd5345a180f8f2c13bc62
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dart gun_0
+    21300002: dart gun_1
+    21300004: dart gun_2
+    21300006: dart gun_3
+    21300008: dart gun_4
+    21300010: dart gun_5
+    21300012: dart gun_6
+    21300014: dart gun_7
+    21300016: dart gun_8
+    21300018: dart gun_9
+    21300020: dart gun_10
+    21300022: dart gun_11
+    21300024: dart gun_12
+    21300026: dart gun_13
+    21300028: dart gun_14
+    21300030: dart gun_15
+    21300032: dart gun_16
+    21300034: dart gun_17
+    21300036: dart gun_18
+    21300038: dart gun_19
+    21300040: dart gun_20
+    21300042: dart gun_21
+    21300044: dart gun_22
+    21300046: dart gun_23
+    21300048: dart gun_24
+    21300050: dart gun_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dart gun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 932
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 932
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 932
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 932
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 932
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 840
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 840
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 840
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_9
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 840
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_11
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 748
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 748
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_13
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 748
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_14
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 748
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_16
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 656
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_17
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 656
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 656
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_19
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 656
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 564
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 564
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_22
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 564
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 564
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_24
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 564
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dart gun_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

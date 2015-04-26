@@ -5,6 +5,9 @@ public class Trap : MonoBehaviour {
 
 	public float lifeTimeInSeconds = 5f; // 0 betekend dat het vernietigd word wanneer het zelf erom vraagt
 
+
+	public int trapPositionType = 0;
+
 	protected AllAroundSpeed allAroundSpeed;
 	protected GameSpeedManipulationEffect gameManEffect;
 	protected Animator animator;
