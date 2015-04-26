@@ -16,4 +16,8 @@ public class Player : MonoBehaviour {
 		//doorzichtig zet lives uit
 		Debug.Log("Hit marker");
 	}
+
+	void NoLivesLeft(){
+		//play death animation. After death animation show end screen.
+	}
 }

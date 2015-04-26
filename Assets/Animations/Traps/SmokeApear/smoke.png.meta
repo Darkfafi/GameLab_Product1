@@ -16,6 +16,7 @@ TextureImporter:
     21300022: smoke_11
     21300024: smoke_12
     21300026: smoke_13
+    21300028: smoke_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -185,7 +186,7 @@ TextureImporter:
         width: 110
         height: 170
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: smoke_13
       rect:
@@ -195,7 +196,17 @@ TextureImporter:
         width: 110
         height: 170
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke_14
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 344
+        width: 110
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

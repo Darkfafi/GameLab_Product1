@@ -7,6 +7,8 @@ public class AllAroundSpeed : MonoBehaviour {
 
 
 	void Update(){
-		GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+		if(GetComponent<SpriteRenderer>() != null){
+			GetComponent<SpriteRenderer>().sortingOrder = Mathf.RoundToInt(transform.position.y * 100f) * -1;
+		}
 	}
 }

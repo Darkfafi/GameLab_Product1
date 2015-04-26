@@ -3,23 +3,51 @@ using System.Collections;
 
 public class ProjectileTrap : Trap {
 	
-	public float fireRate = 0.5f;
+	public float fireRate = 4f;
 	public GameObject projectile;
-	private float lastTimeFired = 0f;
 	public float shootingPower = 6f;
+
+	public float cooldownTime = 0.1f;
+	private float lastTimeFired = 0f;
+	private bool coolingDown = false;
+
+	private bool spawned = true;
+
+	void Start(){
+		gameManEffect.manipulateAnimationSystem = false;
+	}
+
 	// Update is called once per frame
 	protected override void Update ()
 	{
 		base.Update ();
-		if(lastTimeFired + fireRate < timeSpendInSeconds){
-			lastTimeFired = timeSpendInSeconds;
-			Fire();
+
+		if(spawned){
+			if(gameManEffect.timeSpendInSeconds > 0.7f){
+				spawned = false;
+				animator.Play("Shoot");
+			}
 		}
+
+		animator.speed = allAroundSpeed.allAroundSpeed * fireRate;
+
+		if(coolingDown){
+			if(lastTimeFired + cooldownTime < gameManEffect.timeSpendInSeconds){
+				coolingDown = false;
+				animator.Play("Shoot");
+			}
+		}
+	}
+
+	void StartCooldown(){
+		coolingDown = true;
+		lastTimeFired = gameManEffect.timeSpendInSeconds;
 	}
 
 	void Fire(){
 		GameObject bullet;
-		bullet = Instantiate (projectile, transform.position - (new Vector3(Mathf.Cos((transform.eulerAngles.z + 90) / 180 * Mathf.PI),Mathf.Sin((transform.eulerAngles.z + 90) / 180 * Mathf.PI), 0) / 2f), transform.rotation) as GameObject;
+		// - (new Vector3(Mathf.Cos((transform.eulerAngles.z + 90) / 180 * Mathf.PI),Mathf.Sin((transform.eulerAngles.z + 90) / 180 * Mathf.PI), 0) / 10f)
+		bullet = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
 		bullet.GetComponent<Projectile>().speed = shootingPower;
 	}
 }

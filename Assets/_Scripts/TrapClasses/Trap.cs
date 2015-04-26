@@ -5,10 +5,8 @@ public class Trap : MonoBehaviour {
 
 	public float lifeTimeInSeconds = 5f; // 0 betekend dat het vernietigd word wanneer het zelf erom vraagt
 
-	protected float timeSpendInSeconds = 0f;
-
 	protected AllAroundSpeed allAroundSpeed;
-
+	protected GameSpeedManipulationEffect gameManEffect;
 	protected Animator animator;
 
 	private GameObject currentTile;
@@ -19,19 +17,21 @@ public class Trap : MonoBehaviour {
 		}
 
 		allAroundSpeed = gameObject.AddComponent<AllAroundSpeed> ();
-		gameObject.AddComponent<GameSpeedManipulationEffect> ();
+		gameManEffect = gameObject.AddComponent<GameSpeedManipulationEffect> ();
+
+		Instantiate (Resources.Load ("Prefabs/Traps/SmokeTrapSpawn"), transform.position - Vector3.forward * 0.3f, transform.rotation);
 	}
 
 	protected virtual void Update(){
-		timeSpendInSeconds += Time.deltaTime * allAroundSpeed.allAroundSpeed;
 
-		if(lifeTimeInSeconds != 0 && timeSpendInSeconds > lifeTimeInSeconds){
+		if(lifeTimeInSeconds != 0 && gameManEffect.timeSpendInSeconds > lifeTimeInSeconds){
 			DestroyTrap();
 		}
 	}
 
 	void DestroyTrap(){
 		currentTile.GetComponent<Tile> ().EmptyTile ();
+		Instantiate (Resources.Load ("Prefabs/Traps/SmokeTrapSpawn"), transform.position - Vector3.forward * 0.3f, transform.rotation);
 		Destroy (gameObject);
 	}
 

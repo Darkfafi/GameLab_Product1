@@ -8,12 +8,17 @@ public class TrapSpawner : MonoBehaviour {
 
 	GameObject[,] levelGrid;
 
+	GameSpeedManipulationEffect GameSpeedManipulator;
+
 	//Trap place patterns idee: 
 	//dictionary with traps to spawn and time till next trap in the pattern. Counter ++. placeTrap(dictionary[counter]). WaitForNextPlacing(dictionary[counter].time //or something). 
 	//if array out of bound. Pattern vorbij laad nieuwe pattern met cooldown wanneer het moet beginnen.
-	//(time till next trap. //when is the next pattern)
+	//(time till next trap. //when is the next pattern) met = new TrapSpawnPattern
 
 
+	void Awake(){
+		GameSpeedManipulator = gameObject.AddComponent<GameSpeedManipulationEffect> ();
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -21,23 +26,24 @@ public class TrapSpawner : MonoBehaviour {
 		//alle trapspawners inhereten deze. De game/wave manager regeld wanneer welke word geadd aan de game als component. Als er bijv 5 van deze component is dan switcht het naar de volgende pattern
 		grid = GetComponent<Grid>();
 		levelGrid = grid.grid;
-
+		/*
 		List<GameObject> listOfTraps = grid.GetListOfFreeTiles (Grid.WALL);
 		GameObject targetTile = listOfTraps[Random.Range(0,listOfTraps.Count)]; // test
 		PlaceTrap (targetTile); 
-
+		*/
 	}
 
-	bool PlaceTrap(GameObject tile){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
+	protected bool PlaceTrap(GameObject tile){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
 
 		bool placedTrap = false;
 
 		Tile tileProp = tile.GetComponent<Tile> ();
 
 		GameObject trap = new GameObject();
+
 		//plaatsen van trap door middel van te kijken hoeveel grid tiles hij zou innemen. 1 voor 1 te checken of die wel available zijn (als niet break;) if available then build trap. (denk aan age of empire | command and conquer build vlaktes)
 		if(tileProp.typeId == Grid.WALL){
-			trap = Resources.Load("Prefabs/Traps/WallTraps/WallTrapPlaceholder") as GameObject; //liefst een lijst boven aan de code van walltraps waar hij zelf uit kiest.
+			trap = Resources.Load("Prefabs/Traps/WallTraps/WallDartTrap") as GameObject; //liefst een lijst boven aan de code van walltraps waar hij zelf uit kiest.
 			//Debug.Log (tileProp.tileGridPosition);
 		}else if (tileProp.typeId == Grid.GROUND){
 			trap = Resources.Load("Prefabs/Traps/GroundTraps/SpikeTrap") as GameObject;

@@ -19,6 +19,10 @@ public class Projectile : MonoBehaviour {
 		collider2D.isTrigger = true;
 	}
 
+	void Start(){
+		GetComponent<Animator>().Play("Move");
+	}
+
 	public float speed{
 		set{ _speed = value;}
 	}
