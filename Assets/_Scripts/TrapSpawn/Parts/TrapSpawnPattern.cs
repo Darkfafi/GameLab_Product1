@@ -36,7 +36,7 @@ public class TrapSpawnPattern : TrapSpawner {
 
 	GameObject GetTrapFromType(string trapType){
 
-		//GameObject[] trapList;
+		//	GameObject[] trapList;
 		GameObject trap = null;
 
 		playerPositionPlaceAble = false;

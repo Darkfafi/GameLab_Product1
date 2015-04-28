@@ -29,8 +29,7 @@ public class TrapSpawnController : MonoBehaviour {
 		patternHolder = Instantiate (patternHolder) as GameObject;
 		patternHolder.transform.SetParent (gameObject.transform);
 
-		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (easyPatterns [Random.Range (0, easyPatterns.Count)]);
-		//AddPatternToComponent(patternHolder.GetComponent<TrapSpawnPattern>(),easyPatterns[Random.Range(0,easyPatterns.Count)]);
+		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (normalPatterns [Random.Range (0, normalPatterns.Count)]);
 	}
 	// Update is called once per frame
 	void StartArenaTraps () {
@@ -46,6 +45,9 @@ public class TrapSpawnController : MonoBehaviour {
 	void FillLevelPaternLists(){
 		TrapPatternPart part = new TrapPatternPart ();
 
+
+		//----------------------Easy Parts---------------------------
+
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP,5f,5);
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 3);
 		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 2f, 5);
@@ -60,5 +62,21 @@ public class TrapSpawnController : MonoBehaviour {
 
 		easyPatterns.Add (part);
 
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 0f, 5);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 7f, 10);
+
+		easyPatterns.Add (part);
+
+		part = new TrapPatternPart ();
+		//-------------------------------------------------------------
+
+		//----------------------Normal Parts---------------------------
+
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 1f, 9);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 15);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 1f, 10);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 10);
+
+		normalPatterns.Add (part);
 	}
 }

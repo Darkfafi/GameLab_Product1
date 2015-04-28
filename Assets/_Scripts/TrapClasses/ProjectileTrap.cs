@@ -23,7 +23,7 @@ public class ProjectileTrap : Trap {
 		base.Update ();
 
 		if(spawned){
-			if(gameManEffect.timeSpendInSeconds > 0.7f){
+			if(gameManEffect.timeSpendInSeconds > 1.5f){
 				spawned = false;
 				animator.Play("Shoot");
 			}
