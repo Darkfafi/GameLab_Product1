@@ -20,9 +20,9 @@ public class TrapSpawner : MonoBehaviour {
 		GameSpeedManipulator = gameObject.AddComponent<GameSpeedManipulationEffect> ();
 	}
 
-	protected bool PlaceTrap(GameObject trap, GameObject tile = null){ //misschien ook de traptype meegeven of calculeren met wat voor soort tile het is.
+	protected bool PlaceTrap(GameObject trap, GameObject tile = null){
 
-		grid = GetComponent<Grid> ();
+		grid = transform.parent.GetComponent<Grid> ();
 		levelGrid = grid.grid;
 
 		bool placedTrap = false;
@@ -31,36 +31,39 @@ public class TrapSpawner : MonoBehaviour {
 
 		if(tile == null){
 			List<GameObject> listOfFreeTiles = grid.GetListOfFreeTiles(trap.GetComponent<Trap>().trapPositionType);
-			tile = listOfFreeTiles[Random.Range(0,listOfFreeTiles.Count)]; // test
-		}
-
-		tileProp = tile.GetComponent<Tile> ();
-
-		//tileProp.containId = 1; //lieft dat setten met alles wat het aanraakt als he aangemaakt word.
-		Quaternion rotationTrap = Quaternion.identity;
-
-		if(tileProp.typeId == Grid.WALL){
-			//dit zou netter kunnen door de tile zijn neighbours te laten weten in zich.
-			if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) - 1] != null &&
-			   levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) - 1].GetComponent<Tile>().typeId == Grid.GROUND){
-				//down
-				rotationTrap.eulerAngles = new Vector3(0,0,0);
-			}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) - 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)] != null &&
-			         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) - 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)].GetComponent<Tile>().typeId == Grid.GROUND){
-				//left
-				rotationTrap.eulerAngles = new Vector3(0,0,270);
-			}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) + 1] != null && 
-			         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) + 1].GetComponent<Tile>().typeId == Grid.GROUND){
-				//up
-				rotationTrap.eulerAngles = new Vector3(0,0,180);
-			}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) + 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)] != null &&
-			         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) + 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)].GetComponent<Tile>().typeId == Grid.GROUND){
-				//right
-				rotationTrap.eulerAngles = new Vector3(0,0,90);
+			if(listOfFreeTiles.Count != 0){
+				tile = listOfFreeTiles[Random.Range(0,listOfFreeTiles.Count)]; // test
 			}
 		}
-		tileProp.AddTrap(trap,rotationTrap);
+		if(tile != null){
+			tileProp = tile.GetComponent<Tile> ();
 
+			//tileProp.containId = 1; //lieft dat setten met alles wat het aanraakt als he aangemaakt word.
+			Quaternion rotationTrap = Quaternion.identity;
+
+			if(tileProp.typeId == Grid.WALL){
+				//dit zou netter kunnen door de tile zijn neighbours te laten weten in zich.
+				if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) - 1] != null &&
+				   levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) - 1].GetComponent<Tile>().typeId == Grid.GROUND){
+					//down
+					rotationTrap.eulerAngles = new Vector3(0,0,0);
+				}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) - 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)] != null &&
+				         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) - 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)].GetComponent<Tile>().typeId == Grid.GROUND){
+					//left
+					rotationTrap.eulerAngles = new Vector3(0,0,270);
+				}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) + 1] != null && 
+				         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x),Mathf.CeilToInt(tileProp.tileGridPosition.y) + 1].GetComponent<Tile>().typeId == Grid.GROUND){
+					//up
+					rotationTrap.eulerAngles = new Vector3(0,0,180);
+				}else if(levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) + 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)] != null &&
+				         levelGrid[Mathf.CeilToInt(tileProp.tileGridPosition.x) + 1,Mathf.CeilToInt(tileProp.tileGridPosition.y)].GetComponent<Tile>().typeId == Grid.GROUND){
+					//right
+					rotationTrap.eulerAngles = new Vector3(0,0,90);
+				}
+			}
+			tileProp.AddTrap(trap,rotationTrap);
+			placedTrap = true;
+		}
 		return placedTrap;
 	}
 }
