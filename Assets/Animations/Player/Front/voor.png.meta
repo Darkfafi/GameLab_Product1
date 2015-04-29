@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: 31728386df019de4fad632b79683b49c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: voor_0
+    21300002: voor_1
+    21300004: voor_2
+    21300006: voor_3
+    21300008: voor_4
+    21300010: voor_5
+    21300012: voor_6
+    21300014: voor_7
+    21300016: voor_8
+    21300018: voor_9
+    21300020: voor_10
+    21300022: voor_11
+    21300024: voor_12
+    21300026: voor_13
+    21300028: voor_14
+    21300030: voor_15
+    21300032: voor_16
+    21300034: voor_17
+    21300036: voor_18
+    21300038: voor_19
+    21300040: voor_20
+    21300042: voor_21
+    21300044: voor_22
+    21300046: voor_23
+    21300048: voor_24
+    21300050: voor_25
+    21300052: voor_26
+    21300054: voor_27
+    21300056: voor_28
+    21300058: voor_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: voor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_4
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_5
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1288
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_7
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_9
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_11
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 984
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_13
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_14
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_16
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_17
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 680
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_20
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_21
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_22
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_23
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 376
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_25
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_26
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_27
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_28
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: voor_29
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 72
+        width: 165
+        height: 304
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

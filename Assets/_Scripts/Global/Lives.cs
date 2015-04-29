@@ -7,7 +7,7 @@ public class Lives : MonoBehaviour {
 
 	private bool adjustAble = true;
 
-	public float secondsCooldownAfterHit = 0.5f;
+	public float secondsCooldownAfterHit = 1f;
 
 	private float secondsPassed = 0f;
 

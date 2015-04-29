@@ -105,7 +105,7 @@ public class Grid : MonoBehaviour {
 		return listTiles;
 	}
 
-	public List<GameObject> GetListOfFreeTiles(int? place = null){
+	public List<GameObject> GetListOfTiles(int? place = null,bool freeTile = true){
 		Tile tile;;
 		List<GameObject> listOfUseableTiles = new List<GameObject>();
 		
@@ -113,7 +113,7 @@ public class Grid : MonoBehaviour {
 			for(int yAxis = 0; yAxis < height; yAxis++){
 				if(grid[xAxis,yAxis] != null){
 					tile = grid[xAxis,yAxis].GetComponent<Tile>();
-					if(tile.containId == 0){ //if tile does not already contain a trap 
+					if(tile.containId == 0 && freeTile || !freeTile){ //if tile does not already contain a trap 
 						if(tile.typeId == place || place == null){ //if it is equal to the asked place like Wall or Ground etc or not asked for place then all free spaces
 							
 							listOfUseableTiles.Add(tile.gameObject);

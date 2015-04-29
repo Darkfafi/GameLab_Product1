@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 622446885}
   - 212: {fileID: 622446884}
   m_Layer: 0
-  m_Name: lvl_design_tihid-01
+  m_Name: ArenaArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: -9999
-  m_Sprite: {fileID: 21300000, guid: 33d050849a5aaac4da43118a4b3ae444, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc78b9a4c5f88ad4c839d297c3f40553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &622446885
 Transform:
@@ -119,11 +119,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622446883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.93000031, y: 4.94000006, z: 1}
+  m_LocalPosition: {x: -1.32999992, y: .539999962, z: 1}
   m_LocalScale: {x: .224999994, y: .224999994, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1545278276}
+  m_RootOrder: 0
 --- !u!1 &664107529
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,11 +169,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664107529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.88000011, y: 9.25, z: 1}
+  m_LocalPosition: {x: 8.88000011, y: 9.25, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &806519022
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: efed35bb0dde48246a5e9ee0cc4c4721, type: 3}
+  m_Sprite: {fileID: 21300048, guid: 31728386df019de4fad632b79683b49c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &806519024
 Transform:
@@ -224,8 +224,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 806519022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.89000034, y: 4.4000001, z: 0}
-  m_LocalScale: {x: .300000012, y: .300000012, z: 1}
+  m_LocalPosition: {x: 8.89000034, y: 4.36000013, z: 0}
+  m_LocalScale: {x: .330000013, y: .330000013, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -249,8 +249,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.11000001, y: .75999999}
-  m_Center: {x: .109999999, y: .419999987}
+  m_Size: {x: 1.12806726, y: .861201465}
+  m_Center: {x: .0365257263, y: .380599856}
 --- !u!50 &806519027
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -381,7 +381,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.2600002, y: 4.4000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 622446885}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!114 &1545278277

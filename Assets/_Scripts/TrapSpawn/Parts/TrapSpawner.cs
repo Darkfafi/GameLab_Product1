@@ -30,11 +30,12 @@ public class TrapSpawner : MonoBehaviour {
 		Tile tileProp;
 
 		if(tile == null){
-			List<GameObject> listOfFreeTiles = grid.GetListOfFreeTiles(trap.GetComponent<Trap>().trapPositionType);
+			List<GameObject> listOfFreeTiles = grid.GetListOfTiles(trap.GetComponent<Trap>().trapPositionType,trap.GetComponent<Trap>().needsEmptyTile);
 			if(listOfFreeTiles.Count != 0){
 				tile = listOfFreeTiles[Random.Range(0,listOfFreeTiles.Count)]; // test
 			}
 		}
+
 		if(tile != null){
 			tileProp = tile.GetComponent<Tile> ();
 
@@ -62,6 +63,7 @@ public class TrapSpawner : MonoBehaviour {
 				}
 			}
 			tileProp.AddTrap(trap,rotationTrap);
+
 			placedTrap = true;
 		}
 		return placedTrap;

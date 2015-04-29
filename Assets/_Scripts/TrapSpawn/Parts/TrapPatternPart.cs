@@ -16,13 +16,6 @@ public class TrapPatternPart {
 		_timeTillNextSpawn.Add (timeTillNextSpawn);
 		_amountOfTrapsInSpawn.Add (amountOfTraps);
 	}
-	/*
-	 * public void AddPartsToPattern(TrapSpawnPattern pattern){
-		pattern.trapType = _trapType;
-		pattern.timeTillNextSpawn = _timeTillNextSpawn;
-		pattern.amountOfTrapsinSpawn = _amountOfTrapsInSpawn;
-	}
-	 */
 	public void ClearPatternPart(){
 		_trapType.Clear ();
 		_timeTillNextSpawn.Clear ();

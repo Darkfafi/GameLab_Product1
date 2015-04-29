@@ -1,0 +1,381 @@
+fileFormatVersion: 2
+guid: a8a7ac3433d7ba740983cd7bdda24bfa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zij_0
+    21300002: zij_1
+    21300004: zij_2
+    21300006: zij_3
+    21300008: zij_4
+    21300010: zij_5
+    21300012: zij_6
+    21300014: zij_7
+    21300016: zij_8
+    21300018: zij_9
+    21300020: zij_10
+    21300022: zij_11
+    21300024: zij_12
+    21300026: zij_13
+    21300028: zij_14
+    21300030: zij_15
+    21300032: zij_16
+    21300034: zij_17
+    21300036: zij_18
+    21300038: zij_19
+    21300040: zij_20
+    21300042: zij_21
+    21300044: zij_22
+    21300046: zij_23
+    21300048: zij_24
+    21300050: zij_25
+    21300052: zij_26
+    21300054: zij_27
+    21300056: zij_28
+    21300058: zij_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: zij_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1612
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1612
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1612
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1612
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1612
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1295
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1295
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1295
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_8
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1295
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1295
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 978
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 978
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 978
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 978
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_14
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 978
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 661
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_17
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 661
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_18
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 661
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_19
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 661
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_21
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 344
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_22
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 344
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_23
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 344
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_24
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 344
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_26
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 27
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_27
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 27
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_28
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 27
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: zij_29
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 27
+        width: 181
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

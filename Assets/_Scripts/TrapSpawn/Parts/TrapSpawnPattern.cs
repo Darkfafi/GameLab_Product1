@@ -14,6 +14,8 @@ public class TrapSpawnPattern : TrapSpawner {
 	//Ground Trap Section
 	public const string GROUND_SPIKE_TRAP = "GroundSpikeTrap";
 	public const string GROUND_SPIKE_TRAP_PLAYER_POSITION = "GroundSpikeTrapPlayerPosition";
+	public const string GROUND_LIGHTNINGSTRIKE_TRAP = "GroundLightningStrikeTrap";
+	public const string GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION = "GroundLightningStrikeTrapPlayerPosition";
 
 	//Trap List Maker
 	TrapPatternPart _spawnPatternPart;
@@ -47,11 +49,18 @@ public class TrapSpawnPattern : TrapSpawner {
 				break;
 		case GROUND_SPIKE_TRAP:
 			trap = Resources.Load("Prefabs/Traps/GroundTraps/SpikeTrap") as GameObject;
-			trap.GetComponent<SpikeTrap>().triggerOnCreation = false;
+			trap.GetComponent<TouchTrap>().triggerOnCreation = false;
 				break;
 		case GROUND_SPIKE_TRAP_PLAYER_POSITION:
 			trap = Resources.Load("Prefabs/Traps/GroundTraps/SpikeTrap") as GameObject;
-			trap.GetComponent<SpikeTrap>().triggerOnCreation = true;
+			trap.GetComponent<TouchTrap>().triggerOnCreation = true;
+			playerPositionPlaceAble = true;
+			break;
+		case GROUND_LIGHTNINGSTRIKE_TRAP:
+			trap = Resources.Load("Prefabs/Traps/GroundTraps/LightningStrikeTrap") as GameObject;
+			break;
+		case GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION:
+			trap = Resources.Load("Prefabs/Traps/GroundTraps/LightningStrikeTrap") as GameObject;
 			playerPositionPlaceAble = true;
 			break;
 		/*
@@ -87,7 +96,7 @@ public class TrapSpawnPattern : TrapSpawner {
 		if(playerPositionPlaceAble){
 			if(listOfTrapsToPlace.Count > currentTrapOnPlayerPosition){ 
 				if(lastSpawnedPlayerPositionTrap + 0.5f * GetComponent<AllAroundSpeed>().allAroundSpeed < GameSpeedManipulator.timeSpendInSeconds || lastSpawnedPlayerPositionTrap == 999999f){
-					PlaceTrap(listOfTrapsToPlace[currentTrapOnPlayerPosition],transform.parent.GetComponent<Grid>().GetListPressuredTiles(true)[0]);
+					PlaceTrap(listOfTrapsToPlace[currentTrapOnPlayerPosition],transform.parent.GetComponent<Grid>().GetListPressuredTiles(listOfTrapsToPlace[currentTrapOnPlayerPosition].GetComponent<Trap>().needsEmptyTile)[0]);
 
 					lastSpawnedPlayerPositionTrap = GameSpeedManipulator.timeSpendInSeconds;
 					currentTrapOnPlayerPosition += 1;

@@ -15,8 +15,8 @@ public class TrapSpawnController : MonoBehaviour {
 	GameObject patternHolder;
 
 	void Start(){
-		amountOfGroundTiles = GetComponent<Grid> ().GetListOfFreeTiles (Grid.GROUND).Count;
-		amountOfWallTiles = GetComponent<Grid> ().GetListOfFreeTiles (Grid.WALL).Count;
+		amountOfGroundTiles = GetComponent<Grid> ().GetListOfTiles (Grid.GROUND,false).Count;
+		amountOfWallTiles = GetComponent<Grid> ().GetListOfTiles (Grid.WALL,false).Count;
 
 		FillLevelPaternLists ();
 		AddPatternHolder ();
@@ -62,6 +62,8 @@ public class TrapSpawnController : MonoBehaviour {
 
 		easyPatterns.Add (part);
 
+		part = new TrapPatternPart ();
+
 		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 0f, 5);
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 7f, 10);
 
@@ -72,10 +74,8 @@ public class TrapSpawnController : MonoBehaviour {
 
 		//----------------------Normal Parts---------------------------
 
-		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 1f, 9);
-		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 15);
-		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 1f, 10);
-		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 10);
+		//part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 1f, 9);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, amountOfGroundTiles);
 
 		normalPatterns.Add (part);
 	}

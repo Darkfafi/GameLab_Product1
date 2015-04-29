@@ -19,9 +19,11 @@ public class Tile : MonoBehaviour {
 	}
 
 	public void AddTrap(GameObject trap,Quaternion rotation){
-		containId = 1;
 		trap = Instantiate (trap, transform.position, rotation) as GameObject; //als tile grid position aan begin van x is dan rotate hem naar rechts
-		trap.GetComponent<Trap> ().SetCurrentTile(gameObject);
+		if(trap.GetComponent<Trap>().needsEmptyTile){
+			containId = 1;
+			trap.GetComponent<Trap> ().SetCurrentTile(gameObject);
+		}
 	}
 
 	public void EmptyTile(){

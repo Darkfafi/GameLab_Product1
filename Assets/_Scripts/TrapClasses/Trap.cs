@@ -5,6 +5,7 @@ public class Trap : MonoBehaviour {
 
 	public float lifeTimeInSeconds = 5f; // 0 betekend dat het vernietigd word wanneer het zelf erom vraagt
 
+	public bool needsEmptyTile = true;
 
 	public int trapPositionType = 0;
 
@@ -33,7 +34,9 @@ public class Trap : MonoBehaviour {
 	}
 
 	void DestroyTrap(){
-		currentTile.GetComponent<Tile> ().EmptyTile ();
+		if (currentTile != null) {
+			currentTile.GetComponent<Tile> ().EmptyTile ();
+		}
 		Instantiate (Resources.Load ("Prefabs/Traps/SmokeTrapSpawn"), transform.position - Vector3.forward * 0.3f, transform.rotation);
 		Destroy (gameObject);
 	}

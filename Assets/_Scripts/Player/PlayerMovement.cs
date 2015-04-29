@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
 
 			//animatie zijkant.
 			float lookDirection = 1;
-
+			GetComponent<Animator>().Play("SideWalk");
 			if(velocityControll.x < 0){
 				//Left
 				lookDirection = -Mathf.Abs(transform.localScale.x);
@@ -33,9 +33,12 @@ public class PlayerMovement : MonoBehaviour {
 		}else if(Mathf.Abs(velocityControll.y) > Mathf.Abs(velocityControll.x)){
 			if(velocityControll.y < 0){
 				//Down
+				GetComponent<Animator>().Play("FrontWalk");
 			}else{
 				//Up
 			}
+		}else if(Mathf.Abs (velocityControll.x) + Mathf.Abs(velocityControll.y) < 0.1f){
+			GetComponent<Animator>().Play("Idle");
 		}
 	}
 }
