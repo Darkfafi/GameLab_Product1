@@ -495,9 +495,9 @@ MonoBehaviour:
   signalIcons:
   - {fileID: 2800000, guid: 987680db3613cf14383bcd6662d3edd4, type: 3}
   - {fileID: 2800000, guid: c7ed482e000e8e84f95fb8e464b4afe9, type: 3}
-  - {fileID: 2800000, guid: 2d67b5f04bd3c714794a7ea96084ca1f, type: 3}
   - {fileID: 2800000, guid: 636d2f47b7cc777458262e416e802458, type: 3}
-  - {fileID: 2800000, guid: 2cd1c6d681d809b4fb05a6b55520d5f3, type: 3}
+  - {fileID: 2800000, guid: 2d67b5f04bd3c714794a7ea96084ca1f, type: 3}
+  - {fileID: 2800000, guid: c7ed482e000e8e84f95fb8e464b4afe9, type: 3}
 --- !u!1 &2094331044
 GameObject:
   m_ObjectHideFlags: 0

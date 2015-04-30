@@ -19,5 +19,6 @@ public class Player : MonoBehaviour {
 
 	void NoLivesLeft(){
 		//play death animation. After death animation show end screen.
+		Debug.Log ("Death");
 	}
 }

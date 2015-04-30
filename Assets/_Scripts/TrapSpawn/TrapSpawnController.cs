@@ -74,8 +74,9 @@ public class TrapSpawnController : MonoBehaviour {
 
 		//----------------------Normal Parts---------------------------
 
-		//part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 1f, 9);
-		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, amountOfGroundTiles);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP, 2f, 10);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, 10);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP_PLAYER_POSITION, 2f, 20);
 
 		normalPatterns.Add (part);
 	}
