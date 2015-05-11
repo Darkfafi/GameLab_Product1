@@ -29,7 +29,7 @@ public class TrapSpawnController : MonoBehaviour {
 		patternHolder = Instantiate (patternHolder) as GameObject;
 		patternHolder.transform.SetParent (gameObject.transform);
 
-		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (normalPatterns [Random.Range (0, normalPatterns.Count)]);
+		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (easyPatterns [Random.Range (0, easyPatterns.Count)]);
 	}
 	// Update is called once per frame
 	void StartArenaTraps () {

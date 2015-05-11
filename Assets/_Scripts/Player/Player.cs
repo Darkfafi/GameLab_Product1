@@ -14,7 +14,8 @@ public class Player : MonoBehaviour {
 
 	void LostLife(){
 		//doorzichtig zet lives uit
-		Debug.Log("Hit marker");
+		gameObject.GetComponent<Lives> ().AddSubLife (-1);
+	//	Debug.Log("Hit marker");
 	}
 
 	void NoLivesLeft(){

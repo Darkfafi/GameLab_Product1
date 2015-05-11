@@ -15,13 +15,14 @@ public class Lives : MonoBehaviour {
 		if(adjustAble){
 			lives += 1;
 			if(amount < 0){
-				SendMessage("LostLife",SendMessageOptions.DontRequireReceiver);
+				Debug.Log(amount);
+				//SendMessage("LostLife",SendMessageOptions.DontRequireReceiver);
 				if(lives < 0){
-					SendMessage("NoLivesLeft",SendMessageOptions.DontRequireReceiver);
+					//SendMessage("NoLivesLeft",SendMessageOptions.DontRequireReceiver);
 				}
 				HitLessCountdownStart();
 			}else if(amount > 0){
-				SendMessage("AddedLife",SendMessageOptions.DontRequireReceiver);
+				//SendMessage("AddedLife",SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	}
