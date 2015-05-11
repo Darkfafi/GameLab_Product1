@@ -44,11 +44,14 @@ public class GameSpeedFocus : MonoBehaviour {
 
 				}
 
-				if(slider.value > 0.75f){
+				if(slider.value > 0.65f){
 					if(GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute){
-						GetComponent<AudioSource>().volume = 1.15f - slider.value;
-						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = false;
+						GetComponent<AudioSource>().volume = 1.05f - slider.value;
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.25f;
+						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = false;
+					}else{
+						GetComponent<AudioSource>().volume = 1.05f - slider.value;
+						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.15f;
 					}
 				}else{
 					GetComponent<AudioSource>().volume = 0.8f;
