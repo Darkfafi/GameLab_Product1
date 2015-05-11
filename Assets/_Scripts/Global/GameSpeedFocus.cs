@@ -18,9 +18,12 @@ public class GameSpeedFocus : MonoBehaviour {
 	}
 
 	void Start(){
-		TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
-		slider = GameObject.Find ("FocusBar").GetComponent<Slider> ();
-		controller.UpdateAttentionEvent += OnUpdateAttention;
+		if(GameObject.Find("NeuroSkyTGCController") != null){
+			TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
+			slider = GameObject.Find ("FocusBar").GetComponent<Slider> ();
+			controller.UpdateAttentionEvent += OnUpdateAttention;
+			Debug.Log (controller);
+		}
 	}
 
 	void OnUpdateAttention(int value){
@@ -46,12 +49,14 @@ public class GameSpeedFocus : MonoBehaviour {
 
 				if(slider.value > 0.65f){
 					if(GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute){
+
 						GetComponent<AudioSource>().volume = 1.05f - slider.value;
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.25f;
+
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = false;
 					}else{
 						GetComponent<AudioSource>().volume = 1.05f - slider.value;
-						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.15f;
+						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.20f;
 					}
 				}else{
 					GetComponent<AudioSource>().volume = 0.8f;

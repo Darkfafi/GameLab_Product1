@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour {
 				GetComponent<Animator>().Play("FrontWalk");
 			}else{
 				//Up
+				GetComponent<Animator>().Play("BackWalk");
 			}
 		}else if(Mathf.Abs (velocityControll.x) + Mathf.Abs(velocityControll.y) < 0.1f){
 			GetComponent<Animator>().Play("Idle");

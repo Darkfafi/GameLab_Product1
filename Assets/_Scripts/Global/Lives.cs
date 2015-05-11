@@ -13,16 +13,15 @@ public class Lives : MonoBehaviour {
 
 	public void AddSubLife(int amount){
 		if(adjustAble){
-			lives += 1;
+			lives += amount;
 			if(amount < 0){
-				Debug.Log(amount);
-				//SendMessage("LostLife",SendMessageOptions.DontRequireReceiver);
-				if(lives < 0){
-					//SendMessage("NoLivesLeft",SendMessageOptions.DontRequireReceiver);
+				SendMessage("LostLife",SendMessageOptions.DontRequireReceiver);
+				if(lives <= 0){
+					SendMessage("NoLivesLeft",SendMessageOptions.DontRequireReceiver);
 				}
 				HitLessCountdownStart();
 			}else if(amount > 0){
-				//SendMessage("AddedLife",SendMessageOptions.DontRequireReceiver);
+				SendMessage("AddedLife",SendMessageOptions.DontRequireReceiver);
 			}
 		}
 	}
