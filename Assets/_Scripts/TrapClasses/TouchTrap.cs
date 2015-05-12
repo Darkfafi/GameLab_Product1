@@ -5,7 +5,7 @@ public class TouchTrap : Trap {
 	
 	public bool triggerOnCreation = false;
 
-	private bool canDamage = false;
+	protected bool canDamage = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +26,7 @@ public class TouchTrap : Trap {
 			}
 		}
 	}
-	void TriggerSpike(){
+	protected virtual void TriggerSpike(){
 		animator.Play("Strike");
 	}
 

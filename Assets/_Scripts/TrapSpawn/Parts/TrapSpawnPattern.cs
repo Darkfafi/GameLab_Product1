@@ -16,6 +16,7 @@ public class TrapSpawnPattern : TrapSpawner {
 	public const string GROUND_SPIKE_TRAP_PLAYER_POSITION = "GroundSpikeTrapPlayerPosition";
 	public const string GROUND_LIGHTNINGSTRIKE_TRAP = "GroundLightningStrikeTrap";
 	public const string GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION = "GroundLightningStrikeTrapPlayerPosition";
+	public const string GROUND_FIRE_TRAP = "GroundFireTrap";
 
 	//Trap List Maker
 	TrapPatternPart _spawnPatternPart;
@@ -63,6 +64,10 @@ public class TrapSpawnPattern : TrapSpawner {
 			trap = Resources.Load("Prefabs/Traps/GroundTraps/LightningStrikeTrap") as GameObject;
 			playerPositionPlaceAble = true;
 			break;
+		case GROUND_FIRE_TRAP:
+			trap = Resources.Load("Prefabs/Traps/GroundTraps/FireTrap") as GameObject;
+			break;
+
 		/*
 		 * 
 		case RANDOM_GROUNDTRAP:

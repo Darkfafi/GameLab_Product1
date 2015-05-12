@@ -22,8 +22,9 @@ public class Trap : MonoBehaviour {
 
 		allAroundSpeed = gameObject.AddComponent<AllAroundSpeed> ();
 		gameManEffect = gameObject.AddComponent<GameSpeedManipulationEffect> ();
-
-		Instantiate (Resources.Load ("Prefabs/Traps/SmokeTrapSpawn"), transform.position - Vector3.forward * 0.3f, transform.rotation);
+		if(GetComponent<SpriteRenderer>().sprite != null){
+			Instantiate (Resources.Load ("Prefabs/Traps/SmokeTrapSpawn"), transform.position - Vector3.forward * 0.3f, transform.rotation);
+		}
 	}
 
 	protected virtual void Update(){
@@ -43,5 +44,9 @@ public class Trap : MonoBehaviour {
 
 	public void SetCurrentTile(GameObject tile){
 		currentTile = tile;
+	}
+
+	void ActivateThroughAnimation(){
+		BroadcastMessage ("ActivatedTrap", SendMessageOptions.DontRequireReceiver);
 	}
 }
