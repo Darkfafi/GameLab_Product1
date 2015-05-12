@@ -59,7 +59,6 @@ public class DisplayData : MonoBehaviour
 		
 		GUILayout.Space(Screen.width-150);
 		GUILayout.Label(signalIcons[indexSignalIcons]);
-
 		
 		GUILayout.EndHorizontal ();
     }

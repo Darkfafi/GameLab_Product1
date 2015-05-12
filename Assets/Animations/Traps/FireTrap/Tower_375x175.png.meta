@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: 21e2af144aef1fb45b5bde661166dd04
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tower_375x175_0
+    21300002: Tower_375x175_1
+    21300004: Tower_375x175_2
+    21300006: Tower_375x175_3
+    21300008: Tower_375x175_4
+    21300010: Tower_375x175_5
+    21300012: Tower_375x175_6
+    21300014: Tower_375x175_7
+    21300016: Tower_375x175_8
+    21300018: Tower_375x175_9
+    21300020: Tower_375x175_10
+    21300022: Tower_375x175_11
+    21300024: Tower_375x175_12
+    21300026: Tower_375x175_13
+    21300028: Tower_375x175_14
+    21300030: Tower_375x175_15
+    21300032: Tower_375x175_16
+    21300034: Tower_375x175_17
+    21300036: Tower_375x175_18
+    21300038: Tower_375x175_19
+    21300040: Tower_375x175_20
+    21300042: Tower_375x175_21
+    21300044: Tower_375x175_22
+    21300046: Tower_375x175_23
+    21300048: Tower_375x175_24
+    21300050: Tower_375x175_25
+    21300052: Tower_375x175_26
+    21300054: Tower_375x175_27
+    21300056: Tower_375x175_28
+    21300058: Tower_375x175_29
+    21300060: Tower_375x175_30
+    21300062: Tower_375x175_31
+    21300064: Tower_375x175_32
+    21300066: Tower_375x175_33
+    21300068: Tower_375x175_34
+    21300070: Tower_375x175_35
+    21300072: Tower_375x175_36
+    21300074: Tower_375x175_37
+    21300076: Tower_375x175_38
+    21300078: Tower_375x175_39
+    21300080: Tower_375x175_40
+    21300082: Tower_375x175_41
+    21300084: Tower_375x175_42
+    21300086: Tower_375x175_43
+    21300088: Tower_375x175_44
+    21300090: Tower_375x175_45
+    21300092: Tower_375x175_46
+    21300094: Tower_375x175_47
+    21300096: Tower_375x175_48
+    21300098: Tower_375x175_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tower_375x175_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_4
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_5
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_6
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_7
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_8
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_9
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_10
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1525
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_13
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_14
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_15
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_17
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_18
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_19
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_20
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_21
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 1150
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_24
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_25
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_26
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_27
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_28
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_29
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_30
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_31
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_32
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 775
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_34
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_35
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_36
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_37
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_38
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_39
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_40
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_41
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_42
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_43
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 400
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_45
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_46
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_47
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_48
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tower_375x175_49
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 25
+        width: 178
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

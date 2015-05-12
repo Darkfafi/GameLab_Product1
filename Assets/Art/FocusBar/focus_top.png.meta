@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 762b57b3c0ef5a84aa7008f712dffa9d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: focus_top_0
+    21300002: focus_top_1
+    21300004: focus_top_2
+    21300006: focus_top_3
+    21300008: focus_top_4
+    21300010: focus_top_5
+    21300012: focus_top_6
+    21300014: focus_top_7
+    21300016: focus_top_8
+    21300018: focus_top_9
+    21300020: focus_top_10
+    21300022: focus_top_11
+    21300024: focus_top_12
+    21300026: focus_top_13
+    21300028: focus_top_14
+    21300030: focus_top_15
+    21300032: focus_top_16
+    21300034: focus_top_17
+    21300036: focus_top_18
+    21300038: focus_top_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: focus_top_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 452
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 452
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 452
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 452
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 392
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 392
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 392
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 392
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 332
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 332
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 332
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 332
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 272
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 272
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 272
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_top_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 272
+        width: 90
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

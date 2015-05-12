@@ -11,7 +11,7 @@ public class GameSpeedFocus : MonoBehaviour {
 	private bool slidingSlider = false;
 	private float sliderValue = 0;
 	private float sliderSlideSpeed = 0.002f;
-	Slider slider;
+	GameObject slider;
 	public float gameSpeed{
 		
 		get{ return _gameSpeed; }
@@ -20,9 +20,8 @@ public class GameSpeedFocus : MonoBehaviour {
 	void Start(){
 		if(GameObject.Find("NeuroSkyTGCController") != null){
 			TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
-			slider = GameObject.Find ("FocusBar").GetComponent<Slider> ();
+			slider = GameObject.Find ("Bar");
 			controller.UpdateAttentionEvent += OnUpdateAttention;
-			Debug.Log (controller);
 		}
 	}
 
@@ -38,25 +37,24 @@ public class GameSpeedFocus : MonoBehaviour {
 
 	void Update(){
 		if(slidingSlider){
-			Debug.Log(Mathf.Abs(slider.value - sliderValue));
-			if(Mathf.Abs(slider.value - sliderValue) > 0.01f){
-				if(slider.value < sliderValue){
-					slider.value += sliderSlideSpeed;
-				}else if (slider.value > sliderValue){
-					slider.value -= sliderSlideSpeed;
-
+			if(Mathf.Abs(slider.transform.localScale.y - sliderValue) > 0.01f){
+				if(slider.transform.localScale.y < sliderValue){
+					slider.transform.localScale = new Vector3 (1, slider.transform.localScale.y + sliderSlideSpeed, 1);
+				}else if (slider.transform.localScale.y > sliderValue){
+					slider.transform.localScale = new Vector3 (1, slider.transform.localScale.y - sliderSlideSpeed, 1);
+					//.gameObject.transform.localScale = new Vector3 (1, 0.5f, 1)
 				}
 
-				if(slider.value > 0.65f){
+				if(slider.transform.localScale.y > 0.65f){
 					if(GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute){
 
-						GetComponent<AudioSource>().volume = 1.05f - slider.value;
-						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.25f;
+						GetComponent<AudioSource>().volume = 1.05f - slider.transform.localScale.y;
+						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.transform.localScale.y - 0.25f;
 
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = false;
 					}else{
-						GetComponent<AudioSource>().volume = 1.05f - slider.value;
-						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.value - 0.20f;
+						GetComponent<AudioSource>().volume = 1.05f - slider.transform.localScale.y;
+						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.transform.localScale.y - 0.20f;
 					}
 				}else{
 					GetComponent<AudioSource>().volume = 0.8f;
@@ -65,7 +63,7 @@ public class GameSpeedFocus : MonoBehaviour {
 			}else{
 				slidingSlider = false;
 			}
-			_gameSpeed = 1.3f - (slider.value);
+			_gameSpeed = 1.3f - slider.transform.localScale.y;	
 		}
 	}
 }
