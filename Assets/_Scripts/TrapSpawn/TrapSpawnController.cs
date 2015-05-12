@@ -74,7 +74,7 @@ public class TrapSpawnController : MonoBehaviour {
 
 		//----------------------Normal Parts---------------------------
 
-		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 5);
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 10f, 2);
 		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 10);
 		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 20);
 

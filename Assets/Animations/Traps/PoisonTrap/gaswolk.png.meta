@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 010d878000877f745b1436646dd480a3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gaswolk_0
+    21300002: gaswolk_1
+    21300004: gaswolk_2
+    21300006: gaswolk_3
+    21300008: gaswolk_4
+    21300010: gaswolk_5
+    21300012: gaswolk_6
+    21300014: gaswolk_7
+    21300016: gaswolk_8
+    21300018: gaswolk_9
+    21300020: gaswolk_10
+    21300022: gaswolk_11
+    21300024: gaswolk_12
+    21300026: gaswolk_13
+    21300028: gaswolk_14
+    21300030: gaswolk_15
+    21300032: gaswolk_16
+    21300034: gaswolk_17
+    21300036: gaswolk_18
+    21300038: gaswolk_19
+    21300040: gaswolk_20
+    21300042: gaswolk_21
+    21300044: gaswolk_22
+    21300046: gaswolk_23
+    21300048: gaswolk_24
+    21300050: gaswolk_25
+    21300052: gaswolk_26
+    21300054: gaswolk_27
+    21300056: gaswolk_28
+    21300058: gaswolk_29
+    21300060: gaswolk_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gaswolk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1120
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1120
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1120
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_4
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1120
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 940
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 940
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_8
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 940
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 940
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 760
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 760
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_13
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 760
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_14
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 760
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 580
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_17
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 580
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_18
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 580
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_19
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 580
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_21
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 400
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_22
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 400
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_23
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 400
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_24
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 400
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_26
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 220
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_27
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 220
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_28
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 220
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_29
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 220
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gaswolk_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

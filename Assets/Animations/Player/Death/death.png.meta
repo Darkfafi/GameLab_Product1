@@ -1,57 +1,52 @@
 fileFormatVersion: 2
-guid: 12d98d91857eefa42bffac35adb2357d
+guid: 37a69813b409d5549a188818138a5cb8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: idle_0
-    21300002: idle_1
-    21300004: idle_2
-    21300006: idle_3
-    21300008: idle_4
-    21300010: idle_5
-    21300012: idle_6
-    21300014: idle_7
-    21300016: idle_8
-    21300018: idle_9
-    21300020: idle_10
-    21300022: idle_11
-    21300024: idle_12
-    21300026: idle_13
-    21300028: idle_14
-    21300030: idle_15
-    21300032: idle_16
-    21300034: idle_17
-    21300036: idle_18
-    21300038: idle_19
-    21300040: idle_20
-    21300042: idle_21
-    21300044: idle_22
-    21300046: idle_23
-    21300048: idle_24
-    21300050: idle_25
-    21300052: idle_26
-    21300054: idle_27
-    21300056: idle_28
-    21300058: idle_29
-    21300060: idle_30
-    21300062: idle_31
-    21300064: idle_32
-    21300066: idle_33
-    21300068: idle_34
-    21300070: idle_35
-    21300072: idle_36
-    21300074: idle_37
-    21300076: idle_38
-    21300078: idle_39
-    21300080: idle_40
-    21300082: idle_41
-    21300084: idle_42
-    21300086: idle_43
-    21300088: idle_44
-    21300090: idle_45
-    21300092: idle_46
-    21300094: idle_47
-    21300096: idle_48
-    21300098: idle_49
+    21300000: death_0
+    21300002: death_1
+    21300004: death_2
+    21300006: death_3
+    21300008: death_4
+    21300010: death_5
+    21300012: death_6
+    21300014: death_7
+    21300016: death_8
+    21300018: death_9
+    21300020: death_10
+    21300022: death_11
+    21300024: death_12
+    21300026: death_13
+    21300028: death_14
+    21300030: death_15
+    21300032: death_16
+    21300034: death_17
+    21300036: death_18
+    21300038: death_19
+    21300040: death_20
+    21300042: death_21
+    21300044: death_22
+    21300046: death_23
+    21300048: death_24
+    21300050: death_25
+    21300052: death_26
+    21300054: death_27
+    21300056: death_28
+    21300058: death_29
+    21300060: death_30
+    21300062: death_31
+    21300064: death_32
+    21300066: death_33
+    21300068: death_34
+    21300070: death_35
+    21300072: death_36
+    21300074: death_37
+    21300076: death_38
+    21300078: death_39
+    21300080: death_40
+    21300082: death_41
+    21300084: death_42
+    21300086: death_43
+    21300088: death_44
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -74,7 +69,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 1
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -92,508 +87,458 @@ TextureImporter:
   textureType: 8
   buildTargetSettings:
   - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -3
+    maxTextureSize: 4096
+    textureFormat: -1
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: idle_0
+    - name: death_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2511
-        width: 191
-        height: 276
+        y: 4985
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_1
+    - name: death_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 2511
-        width: 191
-        height: 276
+        x: 417
+        y: 4985
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_2
+    - name: death_2
       rect:
         serializedVersion: 2
-        x: 382
-        y: 2511
-        width: 191
-        height: 276
+        x: 834
+        y: 4985
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_3
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 2511
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_4
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 2511
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_5
+    - name: death_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 2235
-        width: 191
-        height: 276
+        y: 4635
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_6
+    - name: death_4
       rect:
         serializedVersion: 2
-        x: 191
-        y: 2235
-        width: 191
-        height: 276
+        x: 417
+        y: 4635
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_7
+    - name: death_5
       rect:
         serializedVersion: 2
-        x: 382
-        y: 2235
-        width: 191
-        height: 276
+        x: 834
+        y: 4635
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_8
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 2235
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_9
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 2235
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_10
+    - name: death_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 1959
-        width: 191
-        height: 276
+        y: 4285
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_11
+    - name: death_7
       rect:
         serializedVersion: 2
-        x: 191
-        y: 1959
-        width: 191
-        height: 276
+        x: 417
+        y: 4285
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_12
+    - name: death_8
       rect:
         serializedVersion: 2
-        x: 382
-        y: 1959
-        width: 191
-        height: 276
+        x: 834
+        y: 4285
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_13
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 1959
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_14
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 1959
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_15
+    - name: death_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 1683
-        width: 191
-        height: 276
+        y: 3935
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_16
+    - name: death_10
       rect:
         serializedVersion: 2
-        x: 191
-        y: 1683
-        width: 191
-        height: 276
+        x: 417
+        y: 3935
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_17
+    - name: death_11
       rect:
         serializedVersion: 2
-        x: 382
-        y: 1683
-        width: 191
-        height: 276
+        x: 834
+        y: 3935
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_18
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 1683
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_19
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 1683
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_20
+    - name: death_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 1407
-        width: 191
-        height: 276
+        y: 3585
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_21
+    - name: death_13
       rect:
         serializedVersion: 2
-        x: 191
-        y: 1407
-        width: 191
-        height: 276
+        x: 417
+        y: 3585
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_22
+    - name: death_14
       rect:
         serializedVersion: 2
-        x: 382
-        y: 1407
-        width: 191
-        height: 276
+        x: 834
+        y: 3585
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_23
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 1407
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_24
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 1407
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_25
+    - name: death_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 1131
-        width: 191
-        height: 276
+        y: 3235
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_26
+    - name: death_16
       rect:
         serializedVersion: 2
-        x: 191
-        y: 1131
-        width: 191
-        height: 276
+        x: 417
+        y: 3235
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_27
+    - name: death_17
       rect:
         serializedVersion: 2
-        x: 382
-        y: 1131
-        width: 191
-        height: 276
+        x: 834
+        y: 3235
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_28
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 1131
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_29
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 1131
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_30
+    - name: death_18
       rect:
         serializedVersion: 2
         x: 0
-        y: 855
-        width: 191
-        height: 276
+        y: 2885
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_31
+    - name: death_19
       rect:
         serializedVersion: 2
-        x: 191
-        y: 855
-        width: 191
-        height: 276
+        x: 417
+        y: 2885
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_32
+    - name: death_20
       rect:
         serializedVersion: 2
-        x: 382
-        y: 855
-        width: 191
-        height: 276
+        x: 834
+        y: 2885
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_33
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 855
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_34
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 855
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_35
+    - name: death_21
       rect:
         serializedVersion: 2
         x: 0
-        y: 579
-        width: 191
-        height: 276
+        y: 2535
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_36
+    - name: death_22
       rect:
         serializedVersion: 2
-        x: 191
-        y: 579
-        width: 191
-        height: 276
+        x: 417
+        y: 2535
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_37
+    - name: death_23
       rect:
         serializedVersion: 2
-        x: 382
-        y: 579
-        width: 191
-        height: 276
+        x: 834
+        y: 2535
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_38
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 579
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_39
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 579
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_40
+    - name: death_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 303
-        width: 191
-        height: 276
+        y: 2185
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_41
+    - name: death_25
       rect:
         serializedVersion: 2
-        x: 191
-        y: 303
-        width: 191
-        height: 276
+        x: 417
+        y: 2185
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_42
+    - name: death_26
       rect:
         serializedVersion: 2
-        x: 382
-        y: 303
-        width: 191
-        height: 276
+        x: 834
+        y: 2185
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_43
-      rect:
-        serializedVersion: 2
-        x: 573
-        y: 303
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_44
-      rect:
-        serializedVersion: 2
-        x: 764
-        y: 303
-        width: 191
-        height: 276
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_45
+    - name: death_27
       rect:
         serializedVersion: 2
         x: 0
-        y: 27
-        width: 191
-        height: 276
+        y: 1835
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_46
+    - name: death_28
       rect:
         serializedVersion: 2
-        x: 191
-        y: 27
-        width: 191
-        height: 276
+        x: 417
+        y: 1835
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_47
+    - name: death_29
       rect:
         serializedVersion: 2
-        x: 382
-        y: 27
-        width: 191
-        height: 276
+        x: 834
+        y: 1835
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_48
+    - name: death_30
       rect:
         serializedVersion: 2
-        x: 573
-        y: 27
-        width: 191
-        height: 276
+        x: 0
+        y: 1485
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: idle_49
+    - name: death_31
       rect:
         serializedVersion: 2
-        x: 764
-        y: 27
-        width: 191
-        height: 276
+        x: 417
+        y: 1485
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_32
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1485
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1135
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_34
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1135
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_35
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1135
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 785
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_37
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 785
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_38
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 785
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_40
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 435
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_41
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 435
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_43
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 85
+        width: 417
+        height: 350
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: death_44
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 85
+        width: 417
+        height: 350
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

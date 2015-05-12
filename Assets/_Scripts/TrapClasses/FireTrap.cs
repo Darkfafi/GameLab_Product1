@@ -4,15 +4,6 @@ using System.Collections;
 public class FireTrap : TouchTrap {
 
 	bool canStrike = false;
-	public bool sortLayer = true;
-
-	void Start(){
-		if(!sortLayer){
-			if(GetComponent<SortLayer>() != null){
-				Destroy(GetComponent<SortLayer>());
-			}
-		}
-	}
 
 	void OnTriggerExit2D(Collider2D other){
 		if(other.gameObject.GetComponent<Lives>() != null && canStrike){

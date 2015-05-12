@@ -24,11 +24,11 @@ public class Timer : MonoBehaviour {
 		}
 	}
 
-	float GetCurrentTimeInSeconds(){
+	public float GetCurrentTimeInSeconds(){
 		return _currentTimeInDeltaTime;
 	}
 
-	string MorphTimeToHumanTimeString(float timeInSeconds){
+	public string MorphTimeToHumanTimeString(float timeInSeconds){
 
 		int hoursCounter = 0;
 		int minutesCounter = 0;
@@ -69,7 +69,7 @@ public class Timer : MonoBehaviour {
 		return hourString + minString + secString;
 	}
 
-	void ToggleTimer(bool toggleSet){
+	public void ToggleTimer(bool toggleSet){
 		_timerRunning = toggleSet;
 	}
 

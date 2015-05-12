@@ -5,7 +5,7 @@ public class Menu : MonoBehaviour {
 
 	float signalValue = 200;
 
-	string noNeuroText = "Please connect the neurosky and wear the neurosky correctly to continue.";
+	string noNeuroText = "Please connect the Neurosky and wear the Neurosky correctly to continue.";
 	string neuroConnected = "Press any key to continue. \r\n Press 'B' or 'Escape' to exit the game.";
 
 	void Start(){
