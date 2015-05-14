@@ -5,6 +5,8 @@ public class TouchTrap : Trap {
 	
 	public bool triggerOnCreation = false;
 
+	public float triggerAfterTime = float.NaN;
+
 	protected bool canDamage = false;
 
 	// Use this for initialization
@@ -26,6 +28,18 @@ public class TouchTrap : Trap {
 			}
 		}
 	}
+	protected override void Update ()
+	{
+		base.Update ();
+
+		if(!float.IsNaN(triggerAfterTime)){
+			if(gameManEffect.timeSpendInSeconds > triggerAfterTime){
+				triggerAfterTime = float.NaN;
+				TriggerSpike();
+			}
+		}
+	}
+
 	protected virtual void TriggerSpike(){
 		animator.Play("Strike");
 	}

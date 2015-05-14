@@ -8,7 +8,6 @@ public class Trap : MonoBehaviour {
 	public bool needsEmptyTile = true;
 	public bool sortLayer = true;
 	public int trapPositionType = 0;
-
 	protected AllAroundSpeed allAroundSpeed;
 	protected GameSpeedManipulationEffect gameManEffect;
 	protected Animator animator;

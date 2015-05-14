@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour {
 	public int typeId = 0; //of het op de muur zit (1) of op de grond (0) etc
 	public int containId = 0; //of er niks op zit (0) of een trap (1) etc
 	public bool pressured = false; //kan je zien of er iets op deze tile staat (bijv speler staat er op dan spawn een trap daar).
+	private float timePressured = 0;
 
 
 	public Vector2 tileSize = new Vector2 (0.8484f, 0.83426f);
@@ -33,12 +34,31 @@ public class Tile : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag == "Player" && gameObject.tag != "Wall"){
 			pressured = true;
+			timePressured = Time.time;
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other){
 		if(other.gameObject.tag == "Player" && gameObject.tag != "Wall"){
 			pressured = false;//
+			timePressured = 0;
+		}
+	}
+	void Update(){
+		if(timePressured != 0){
+			if(containId == 0 && Time.time > timePressured + 5f){
+
+				int trapToSpawn = Random.Range(0,2);
+				string trapResourceString = "";
+				if(trapToSpawn == 0){
+					trapResourceString = "Prefabs/Traps/GroundTraps/SpikeTrap";
+				}else if (trapToSpawn == 1){
+					trapResourceString = "Prefabs/Traps/GroundTraps/LightningStrikeTrap";
+				}
+				GameObject trap = Resources.Load(trapResourceString) as GameObject;
+				AddTrap(trap,transform.rotation);
+				timePressured = Time.time;
+			}
 		}
 	}
 }

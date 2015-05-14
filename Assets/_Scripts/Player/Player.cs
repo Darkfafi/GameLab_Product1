@@ -16,11 +16,6 @@ public class Player : MonoBehaviour {
 		originalColor = GetComponent<SpriteRenderer>().color;
 	}
 
-	void LostLife(){
-		//doorzichtig zet lives ui;
-		Debug.Log("Hit marker");
-	}
-
 	void NoLivesLeft(){
 		//play death animation. After death animation show end screen.
 		Destroy (GetComponent<PlayerMovement>());

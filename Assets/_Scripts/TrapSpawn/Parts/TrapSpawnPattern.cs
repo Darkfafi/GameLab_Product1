@@ -17,6 +17,7 @@ public class TrapSpawnPattern : TrapSpawner {
 	public const string GROUND_LIGHTNINGSTRIKE_TRAP = "GroundLightningStrikeTrap";
 	public const string GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION = "GroundLightningStrikeTrapPlayerPosition";
 	public const string GROUND_FIRE_TRAP = "GroundFireTrap";
+	public const string GROUND_POISON_TRAP = "GroundPoisonTrap";
 
 	//Trap List Maker
 	TrapPatternPart _spawnPatternPart;
@@ -67,19 +68,9 @@ public class TrapSpawnPattern : TrapSpawner {
 		case GROUND_FIRE_TRAP:
 			trap = Resources.Load("Prefabs/Traps/GroundTraps/FireTrap") as GameObject;
 			break;
-
-		/*
-		 * 
-		case RANDOM_GROUNDTRAP:
-			trapList = Resources.LoadAll("Prefabs/Traps/GroundTraps") as GameObject[];
-			trap = trapList[Random.Range(0,trapList.Length)];
-				break;
-
-		case RANDOM_WALLTRAP:
-			trapList = Resources.LoadAll("Prefabs/Traps/WallTraps") as GameObject[];
-			Debug.Log(trapList);
-			trap = trapList[Random.Range(0,trapList.Length)];
-				break;*/
+		case GROUND_POISON_TRAP:
+			trap = Resources.Load("Prefabs/Traps/GroundTraps/PoisonTrap") as GameObject;
+			break;
 		}
 
 		return trap;
@@ -95,7 +86,6 @@ public class TrapSpawnPattern : TrapSpawner {
 				PlayTrapPattern();
 			}else{
 				SendMessageUpwards("TrapPatternEnded",SendMessageOptions.DontRequireReceiver);
-				Debug.Log("End Pattern");
 			}
 		}
 		if(playerPositionPlaceAble){
@@ -116,7 +106,6 @@ public class TrapSpawnPattern : TrapSpawner {
 	}
 
 	public void PlayTrapPattern(){
-		//GameObject tileToPlace = null;
 		for(int i = 0; i < _spawnPatternPart.amountOfTrapsInSpawn[_currentTrapPart]; i++){
 			listOfTrapsToPlace.Add(GetTrapFromType(_spawnPatternPart.trapType[_currentTrapPart]));
 		}

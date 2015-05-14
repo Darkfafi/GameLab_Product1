@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if(signalValue < 70){
+		if(signalValue < 30){
 			if(GameObject.Find("StartGameText").GetComponent<Text>().text != neuroConnected){
 				GameObject.Find("StartGameText").GetComponent<Text>().text = neuroConnected;
 			}

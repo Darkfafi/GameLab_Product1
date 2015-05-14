@@ -12,6 +12,8 @@ public class TrapSpawnController : MonoBehaviour {
 	List<TrapPatternPart> normalPatterns = new List<TrapPatternPart>();
 	List<TrapPatternPart> hardPatterns = new List<TrapPatternPart>();
 
+	int patternsPlayedCounter = 0;
+
 	GameObject patternHolder;
 
 	void Start(){
@@ -21,7 +23,7 @@ public class TrapSpawnController : MonoBehaviour {
 		FillLevelPaternLists ();
 		AddPatternHolder ();
 
-		Invoke("StartArenaTraps",2f); //intro
+		Invoke("StartArenaTraps",3f); //intro
 
 	}
 	void AddPatternHolder(){
@@ -29,10 +31,22 @@ public class TrapSpawnController : MonoBehaviour {
 		patternHolder = Instantiate (patternHolder) as GameObject;
 		patternHolder.transform.SetParent (gameObject.transform);
 
-		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (normalPatterns [Random.Range (0, normalPatterns.Count)]);
+		List<TrapPatternPart> chosenPatternList;
+		//float timerTime = GameObject.Find ("Timer").GetComponentInChildren<Timer> ().GetCurrentTimeInSeconds ();
+		if(patternsPlayedCounter < 5){
+			chosenPatternList = easyPatterns;
+		}else if(patternsPlayedCounter < 20){
+			chosenPatternList = normalPatterns;
+		}else{
+			chosenPatternList = hardPatterns;
+		}
+
+		patternHolder.GetComponent<TrapSpawnPattern> ().AddPart (chosenPatternList [Random.Range (0, chosenPatternList.Count)]);
+		patternsPlayedCounter ++;
 	}
 	// Update is called once per frame
 	void StartArenaTraps () {
+		//GameObject.Find ("StartScreen").SetActive (false);
 		patternHolder.GetComponent<TrapSpawnPattern>().PlayTrapPattern ();
 	}
 
@@ -49,23 +63,23 @@ public class TrapSpawnController : MonoBehaviour {
 		//----------------------Easy Parts---------------------------
 
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP,5f,5);
-		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 3);
-		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 2f, 5);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 5);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 3f, 2);
 
 		easyPatterns.Add (part);
 
 		part = new TrapPatternPart ();
 
-		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 1f, 8);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 6);
 		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 2f, 3);
-		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 3f, 8);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 5f, 3);
 
 		easyPatterns.Add (part);
 
 		part = new TrapPatternPart ();
 
-		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 0f, 5);
-		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 7f, 10);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 0f, 2);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 7f, 8);
 
 		easyPatterns.Add (part);
 
@@ -74,10 +88,66 @@ public class TrapSpawnController : MonoBehaviour {
 
 		//----------------------Normal Parts---------------------------
 
-		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 10f, 2);
-		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 10);
-		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 20);
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 2);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 6);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 2f, 1);
 
 		normalPatterns.Add (part);
+
+		part = new TrapPatternPart ();
+
+
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 4f, 8);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 4f, 6);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP_PLAYER_POSITION, 2f, 5);
+
+		normalPatterns.Add (part);
+
+		part = new TrapPatternPart ();
+		
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 4f, 4);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 5f, 4);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 2f, 3);
+		
+		normalPatterns.Add (part);
+
+		part = new TrapPatternPart ();
+		
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP, 2f, 6);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 5f, 2);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, 6);
+		
+		normalPatterns.Add (part);
+		//-------------------------------------------------------------
+
+		//----------------------Hard Parts---------------------------
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 2f, 3);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 10);
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 10f, 2);
+		
+		hardPatterns.Add (part);
+		
+		part = new TrapPatternPart ();
+		
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP, 2f, 8);
+		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 6);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 4f, 8);
+		
+		hardPatterns.Add (part);
+		
+		part = new TrapPatternPart ();
+		
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 1f, 5);
+		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 2f, 8);
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 2f, 2);
+		
+		hardPatterns.Add (part);
 	}
+
+
 }

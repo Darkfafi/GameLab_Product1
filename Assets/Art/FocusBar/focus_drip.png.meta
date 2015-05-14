@@ -1,7 +1,23 @@
 fileFormatVersion: 2
 guid: cb94fd51177ff5846a519f48c6c656f5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: focus_drip_0
+    21300002: focus_drip_1
+    21300004: focus_drip_2
+    21300006: focus_drip_3
+    21300008: focus_drip_4
+    21300010: focus_drip_5
+    21300012: focus_drip_6
+    21300014: focus_drip_7
+    21300016: focus_drip_8
+    21300018: focus_drip_9
+    21300020: focus_drip_10
+    21300022: focus_drip_11
+    21300024: focus_drip_12
+    21300026: focus_drip_13
+    21300028: focus_drip_14
+    21300030: focus_drip_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +41,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +58,166 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: focus_drip_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_5
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1368
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_8
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 688
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 8
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 8
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: focus_drip_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 8
+        width: 81
+        height: 680
+      alignment: 2
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -17,7 +17,6 @@ public class Lives : MonoBehaviour {
 	private float secondsPassed = 0f;
 
 	public void AddSubLife(int amount){
-		Debug.Log (amount);
 		if(adjustAble){
 			lives += amount;
 			if(amount < 0){

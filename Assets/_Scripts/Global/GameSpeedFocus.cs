@@ -10,7 +10,10 @@ public class GameSpeedFocus : MonoBehaviour {
 
 	private bool slidingSlider = false;
 	private float sliderValue = 0;
-	private float sliderSlideSpeed = 0.002f;
+	private float sliderSlideSpeed = 0.001f;
+
+	GameObject focusBarDrip;
+
 	GameObject slider;
 	public float gameSpeed{
 		
@@ -22,7 +25,10 @@ public class GameSpeedFocus : MonoBehaviour {
 			TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
 			slider = GameObject.Find ("Bar");
 			controller.UpdateAttentionEvent += OnUpdateAttention;
+			focusBarDrip = GameObject.Find ("FocusBarDrip");
+			focusBarDrip.SetActive (false);
 		}
+
 	}
 
 	void OnUpdateAttention(int value){
@@ -37,18 +43,21 @@ public class GameSpeedFocus : MonoBehaviour {
 
 	void Update(){
 		if(slidingSlider){
+			if(focusBarDrip.activeSelf == false){
+				focusBarDrip.SetActive(true);
+			}
+
 			if(Mathf.Abs(slider.transform.localScale.y - sliderValue) > 0.01f){
 				if(slider.transform.localScale.y < sliderValue){
 					slider.transform.localScale = new Vector3 (1, slider.transform.localScale.y + sliderSlideSpeed, 1);
 				}else if (slider.transform.localScale.y > sliderValue){
 					slider.transform.localScale = new Vector3 (1, slider.transform.localScale.y - sliderSlideSpeed, 1);
-					//.gameObject.transform.localScale = new Vector3 (1, 0.5f, 1)
 				}
 
 				if(slider.transform.localScale.y > 0.65f){
 					if(GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute){
 
-						GetComponent<AudioSource>().volume = 1.05f - slider.transform.localScale.y;
+						GetComponent<AudioSource>().volume = 1.05f - slider.transform.localScale.y ;
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().volume = slider.transform.localScale.y - 0.25f;
 
 						GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = false;
@@ -61,6 +70,7 @@ public class GameSpeedFocus : MonoBehaviour {
 					GameObject.Find("EffectMusicPlayer").GetComponent<AudioSource>().mute = true;
 				}
 			}else{
+				focusBarDrip.SetActive(false);
 				slidingSlider = false;
 			}
 			_gameSpeed = 1.3f - slider.transform.localScale.y;	
