@@ -12,7 +12,7 @@ public class TrapSpawnController : MonoBehaviour {
 	List<TrapPatternPart> normalPatterns = new List<TrapPatternPart>();
 	List<TrapPatternPart> hardPatterns = new List<TrapPatternPart>();
 
-	int patternsPlayedCounter = 20;
+	int patternsPlayedCounter = 0;
 
 	GameObject patternHolder;
 
