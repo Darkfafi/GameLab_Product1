@@ -11,7 +11,8 @@ public class EndScreen : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		fade.Fade (0.6f);
+		fade.SetAlpha (0f);
+		fade.Fade (1f);
 		Time.timeScale = 0.3f;
 		GameObject.Find ("Timer").GetComponentInChildren<Timer> ().ToggleTimer (false);
 		GameObject.Find ("TimeText").GetComponent<Text> ().text = GameObject.Find ("Timer").GetComponentInChildren<Timer> ().MorphTimeToHumanTimeString (GameObject.Find ("Timer").GetComponentInChildren<Timer> ().GetCurrentTimeInSeconds ());
