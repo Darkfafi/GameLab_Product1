@@ -25,14 +25,14 @@ public class TrapSpawnController : MonoBehaviour {
 
 		GameObject.Find ("Timer").GetComponentInChildren<Timer> ().ToggleTimer (false);
 
-		Invoke("StartArenaTraps",7f); //intro
-		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().Fade (0.6f, 0.007f,false);
-		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().FadeAfterTime (3f, 0f,0.007f);
+		Invoke("StartArenaTraps",8.5f); //intro
+		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().Fade (0.6f, 0.002f,false);
+		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().FadeAfterTime (4f, 0,0.007f);
 		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().OnFadeEnd += DeleteStartScreen;
 
 	}
 	void DeleteStartScreen(float value){
-		if(value == 0){
+		if(value <= 0){
 			GameObject.Find ("Timer").GetComponentInChildren<Timer> ().ToggleTimer (true);
 			Destroy (GameObject.Find ("StartScreen"));
 		}

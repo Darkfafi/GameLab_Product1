@@ -8,7 +8,7 @@ public class Tile : MonoBehaviour {
 	public int containId = 0; //of er niks op zit (0) of een trap (1) etc
 	public bool pressured = false; //kan je zien of er iets op deze tile staat (bijv speler staat er op dan spawn een trap daar).
 	private float timePressured = 0;
-
+	private bool _pressureTrapActive = false;
 
 	public Vector2 tileSize = new Vector2 (0.8484f, 0.83426f);
 
@@ -17,8 +17,11 @@ public class Tile : MonoBehaviour {
 			Vector3 size = new Vector3(tileSize.x,tileSize.y,1);
 			GetComponent<BoxCollider2D>().size = size;
 		}
+		Invoke ("ActivatePlateTrap", 18f);
 	}
-
+	void ActivatePlateTrap(){
+		_pressureTrapActive = true;
+	}
 	public void AddTrap(GameObject trap,Quaternion rotation){
 		trap = Instantiate (trap, transform.position, rotation) as GameObject; //als tile grid position aan begin van x is dan rotate hem naar rechts
 		if(trap.GetComponent<Trap>().needsEmptyTile){
@@ -45,7 +48,7 @@ public class Tile : MonoBehaviour {
 		}
 	}
 	void Update(){
-		if(timePressured != 0){
+		if(timePressured != 0 && _pressureTrapActive){
 			if(containId == 0 && Time.time > timePressured + 5f){
 
 				int trapToSpawn = Random.Range(0,2);

@@ -42,11 +42,16 @@ public class GameSpeedFocus : MonoBehaviour {
 	}
 
 	void Update(){
-		if(Input.GetKey(KeyCode.Space)){
-			if(GameObject.Find("NeuroSkyTGCController") == null){
+		if(GameObject.Find("NeuroSkyTGCController") == null){
+
+			if(Input.GetKey(KeyCode.Space)){
 				OnUpdateAttention(100);
 			}
+			if(Input.GetKey(KeyCode.LeftAlt)){
+				OnUpdateAttention(0);
+			}
 		}
+
 		if(slidingSlider){
 			if(focusBarDrip.activeSelf == false){
 				focusBarDrip.SetActive(true);

@@ -30,7 +30,7 @@ public class Menu : MonoBehaviour {
 					Application.Quit();
 				}else{
 					Debug.Log("Start");
-					GameObject.Find("BlackScreen").GetComponent<FadeInOut>().Fade(1,0.008f);
+					GameObject.Find("BlackScreen").GetComponent<FadeInOut>().Fade(1,0.0035f);
 					GameObject.Find("BlackScreen").GetComponent<FadeInOut>().OnFadeEnd += StartGame;
 				}
 			}

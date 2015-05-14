@@ -21,15 +21,15 @@ public class EndScreen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.JoystickButton2)){
+		if(Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.LeftAlt)){
 			Application.LoadLevel("Test");
 			Time.timeScale = 1f;
 		}
-		if(Input.GetKeyDown(KeyCode.JoystickButton0)){
+		if(Input.GetKeyDown(KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.Space)){
 			Application.LoadLevel("Menu");
 			Time.timeScale = 1f;
 		}
-		if(Input.GetKeyDown(KeyCode.JoystickButton1)){
+		if(Input.GetKeyDown(KeyCode.JoystickButton1) || Input.GetKeyDown(KeyCode.Escape)){
 			Application.Quit();
 			Time.timeScale = 1f;
 		}
