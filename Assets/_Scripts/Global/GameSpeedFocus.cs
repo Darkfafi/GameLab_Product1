@@ -23,11 +23,11 @@ public class GameSpeedFocus : MonoBehaviour {
 	void Start(){
 		if(GameObject.Find("NeuroSkyTGCController") != null){
 			TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
-			slider = GameObject.Find ("Bar");
 			controller.UpdateAttentionEvent += OnUpdateAttention;
-			focusBarDrip = GameObject.Find ("FocusBarDrip");
-			focusBarDrip.SetActive (false);
 		}
+		slider = GameObject.Find ("Bar");
+		focusBarDrip = GameObject.Find ("FocusBarDrip");
+		focusBarDrip.SetActive (false);
 
 	}
 
@@ -42,6 +42,11 @@ public class GameSpeedFocus : MonoBehaviour {
 	}
 
 	void Update(){
+		if(Input.GetKey(KeyCode.Space)){
+			if(GameObject.Find("NeuroSkyTGCController") == null){
+				OnUpdateAttention(100);
+			}
+		}
 		if(slidingSlider){
 			if(focusBarDrip.activeSelf == false){
 				focusBarDrip.SetActive(true);
@@ -73,7 +78,7 @@ public class GameSpeedFocus : MonoBehaviour {
 				focusBarDrip.SetActive(false);
 				slidingSlider = false;
 			}
-			_gameSpeed = 1.3f - slider.transform.localScale.y;	
+			_gameSpeed = 1.4f - slider.transform.localScale.y * 1.2f;	
 		}
 	}
 }

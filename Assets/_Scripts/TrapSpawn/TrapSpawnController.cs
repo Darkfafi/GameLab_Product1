@@ -12,7 +12,7 @@ public class TrapSpawnController : MonoBehaviour {
 	List<TrapPatternPart> normalPatterns = new List<TrapPatternPart>();
 	List<TrapPatternPart> hardPatterns = new List<TrapPatternPart>();
 
-	int patternsPlayedCounter = 0;
+	int patternsPlayedCounter = 20;
 
 	GameObject patternHolder;
 
@@ -124,14 +124,15 @@ public class TrapSpawnController : MonoBehaviour {
 		
 		
 		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP, 2f, 6);
-		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 5f, 2);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 0f, 3);
 		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, 6);
 		
 		normalPatterns.Add (part);
 		//-------------------------------------------------------------
 
 		//----------------------Hard Parts---------------------------
-		
+		part = new TrapPatternPart ();
+
 		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 2f, 3);
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 10);
 		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 10f, 2);
@@ -143,7 +144,7 @@ public class TrapSpawnController : MonoBehaviour {
 		
 		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP, 2f, 8);
 		part.AddToPart (TrapSpawnPattern.WALL_DART_TRAP, 2f, 6);
-		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 4f, 8);
+		part.AddToPart (TrapSpawnPattern.GROUND_LIGHTNINGSTRIKE_TRAP_PLAYER_POSITION, 2f, 8);
 		
 		hardPatterns.Add (part);
 		
@@ -153,6 +154,14 @@ public class TrapSpawnController : MonoBehaviour {
 		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 1f, 5);
 		part.AddToPart (TrapSpawnPattern.GROUND_SPIKE_TRAP, 2f, 8);
 		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 2f, 2);
+		
+		hardPatterns.Add (part);
+		
+		part = new TrapPatternPart ();
+		
+		
+		part.AddToPart (TrapSpawnPattern.GROUND_FIRE_TRAP, 5f, 12);
+		part.AddToPart (TrapSpawnPattern.GROUND_POISON_TRAP, 15f, 8);
 		
 		hardPatterns.Add (part);
 	}
