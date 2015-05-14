@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour {
 
 	void Start(){
 		TGCConnectionController controller = GameObject.Find("NeuroSkyTGCController").GetComponent<TGCConnectionController>();
-
+		GameObject.Find("BlackScreen").GetComponent<FadeInOut>().SetAlpha(0);
 		controller.UpdatePoorSignalEvent += OnUpdatePoorSignal;
 	}
 
@@ -30,7 +30,8 @@ public class Menu : MonoBehaviour {
 					Application.Quit();
 				}else{
 					Debug.Log("Start");
-					Application.LoadLevel("Test");
+					GameObject.Find("BlackScreen").GetComponent<FadeInOut>().Fade(1,0.008f);
+					GameObject.Find("BlackScreen").GetComponent<FadeInOut>().OnFadeEnd += StartGame;
 				}
 			}
 		}else{
@@ -38,5 +39,8 @@ public class Menu : MonoBehaviour {
 				GameObject.Find("StartGameText").GetComponent<Text>().text = noNeuroText;
 			}
 		}
+	}
+	void StartGame(float value){
+		Application.LoadLevel("Test");
 	}
 }

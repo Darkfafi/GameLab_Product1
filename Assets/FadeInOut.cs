@@ -13,6 +13,9 @@ public class FadeInOut : MonoBehaviour {
 	private float _fadeSpeedTimer = 0.005f;
 	private float _fadeTargetValueTimer = 0;
 
+	private bool _childerenInc = true;
+	
+	private bool _childerenIncTimer = true;
 
 	public delegate void FloatInfo(float value);
 
@@ -30,52 +33,56 @@ public class FadeInOut : MonoBehaviour {
 		return returnAlpha;
 	}
 
-	public void SetAlpha(float alphaValue){
+	public void SetAlpha(float alphaValue,bool childerenInc = true){
 		Color color = new Color ();
 		if(GetComponent<SpriteRenderer>() != null){
 			color = GetComponent<SpriteRenderer>().color;
 			color.a = alphaValue;
 			GetComponent<SpriteRenderer>().color = color;
-
-			for(int i = 0; i < gameObject.transform.childCount; i++)
-			{
-				GameObject Go = gameObject.transform.GetChild(i).gameObject;
-				if(Go.GetComponent<SpriteRenderer>() != null){
-					color = Go.GetComponent<SpriteRenderer>().color;
-					color.a = alphaValue;
-					Go.GetComponent<SpriteRenderer>().color = color;
+			if(childerenInc){
+				for(int i = 0; i < gameObject.transform.childCount; i++)
+				{
+					GameObject Go = gameObject.transform.GetChild(i).gameObject;
+					if(Go.GetComponent<SpriteRenderer>() != null){
+						color = Go.GetComponent<SpriteRenderer>().color;
+						color.a = alphaValue;
+						Go.GetComponent<SpriteRenderer>().color = color;
+					}
 				}
 			}
 		}else if(GetComponent<CanvasRenderer>() != null){
 			color = GetComponent<CanvasRenderer>().GetColor();
 			color.a = alphaValue;
 			GetComponent<CanvasRenderer>().SetColor(color);
-
-			for(int i = 0; i < gameObject.transform.childCount; i++)
-			{
-				GameObject Go = gameObject.transform.GetChild(i).gameObject;
-				if(Go.GetComponent<CanvasRenderer>() != null){
-					color = Go.GetComponent<CanvasRenderer>().GetColor();
-					color.a = alphaValue;
-					Go.GetComponent<CanvasRenderer>().SetColor(color);
+			if(childerenInc){
+				for(int i = 0; i < gameObject.transform.childCount; i++)
+				{
+					GameObject Go = gameObject.transform.GetChild(i).gameObject;
+					if(Go.GetComponent<CanvasRenderer>() != null){
+						color = Go.GetComponent<CanvasRenderer>().GetColor();
+						color.a = alphaValue;
+						Go.GetComponent<CanvasRenderer>().SetColor(color);
+					}
 				}
 			}
 		}
 	}
 
-	public void Fade(float fadeToValue,float fadeSpeed = 0.005f){
+	public void Fade(float fadeToValue,float fadeSpeed = 0.005f,bool childerenInc = true){
 		_fadeTargetValue = fadeToValue;
 		_fadeSpeed = fadeSpeed;
 		_fading = true;
+		_childerenInc = childerenInc;
 		if(OnFadeStart != null){
 			OnFadeStart(GetAlpha());
 		}
 	}
-	public void FadeAfterTime(float timeInSeconds,float fadeToValue,float fadeSpeed = 0.005f){
+	public void FadeAfterTime(float timeInSeconds,float fadeToValue,float fadeSpeed = 0.005f,bool childerenInc = true){
 		_timeAskedForTimerFadeOut = Time.time;
 		_fadeTargetValueTimer = fadeToValue;
 		_fadeSpeedTimer = fadeSpeed;
 		_timerFadeOut = timeInSeconds;
+		_childerenIncTimer = childerenInc; 
 	}
 	// Update is called once per frame
 	void Update () {
@@ -83,7 +90,7 @@ public class FadeInOut : MonoBehaviour {
 		if (!float.IsNaN(_timerFadeOut)) {
 			if(Time.time > _timeAskedForTimerFadeOut + _timerFadeOut){
 				_timerFadeOut = float.NaN;
-				Fade(_fadeTargetValueTimer,_fadeSpeedTimer);
+				Fade(_fadeTargetValueTimer,_fadeSpeedTimer,_childerenIncTimer);
 			}
 		}
 
@@ -97,7 +104,7 @@ public class FadeInOut : MonoBehaviour {
 				dir = 1;
 			}
 			alpha += dir * _fadeSpeed;
-			SetAlpha(alpha);
+			SetAlpha(alpha,_childerenInc);
 
 			if(OnFade != null){
 				OnFade(GetAlpha());
