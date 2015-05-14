@@ -23,8 +23,13 @@ public class TrapSpawnController : MonoBehaviour {
 		FillLevelPaternLists ();
 		AddPatternHolder ();
 
-		Invoke("StartArenaTraps",3f); //intro
+		Invoke("StartArenaTraps",7f); //intro
+		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().FadeAfterTime (3f, 0f);
+		GameObject.Find ("StartScreen").GetComponent<FadeInOut> ().OnFadeEnd += DeleteStartScreen;
 
+	}
+	void DeleteStartScreen(float value){
+		Destroy (GameObject.Find ("StartScreen"));
 	}
 	void AddPatternHolder(){
 		patternHolder = Resources.Load("Prefabs/SpawnPattern") as GameObject;

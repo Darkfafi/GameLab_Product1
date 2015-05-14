@@ -4,8 +4,14 @@ using UnityEngine.UI;
 
 public class EndScreen : MonoBehaviour {
 
+	FadeInOut fade;
+
+	void Awake(){
+		fade = gameObject.AddComponent<FadeInOut> ();
+	}
 	// Use this for initialization
 	void Start () {
+		fade.Fade (0.6f);
 		Time.timeScale = 0.3f;
 		GameObject.Find ("Timer").GetComponentInChildren<Timer> ().ToggleTimer (false);
 		GameObject.Find ("TimeText").GetComponent<Text> ().text = GameObject.Find ("Timer").GetComponentInChildren<Timer> ().MorphTimeToHumanTimeString (GameObject.Find ("Timer").GetComponentInChildren<Timer> ().GetCurrentTimeInSeconds ());

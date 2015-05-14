@@ -84,13 +84,14 @@ GameObject:
   - 224: {fileID: 126412677}
   - 222: {fileID: 126412679}
   - 114: {fileID: 126412678}
+  - 114: {fileID: 126412680}
   m_Layer: 5
   m_Name: StartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &126412677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -140,6 +141,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 126412676}
+--- !u!114 &126412680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 126412676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c0dba8f4c8ecd4dbe6b93009498c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &248368488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,7 +1911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11455784, guid: 36948383154319c42a20df620896ac44, type: 2}
       propertyPath: m_Color.a
-      value: .56078434
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36948383154319c42a20df620896ac44, type: 2}
@@ -1971,7 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: .56078434}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
