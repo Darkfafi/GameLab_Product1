@@ -81,8 +81,8 @@ TextureImporter:
         y: 1120
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_1
       rect:
@@ -91,8 +91,8 @@ TextureImporter:
         y: 1120
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_2
       rect:
@@ -101,8 +101,8 @@ TextureImporter:
         y: 1120
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_3
       rect:
@@ -111,8 +111,8 @@ TextureImporter:
         y: 1120
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_4
       rect:
@@ -121,8 +121,8 @@ TextureImporter:
         y: 1120
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_5
       rect:
@@ -131,8 +131,8 @@ TextureImporter:
         y: 940
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_6
       rect:
@@ -141,8 +141,8 @@ TextureImporter:
         y: 940
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_7
       rect:
@@ -151,8 +151,8 @@ TextureImporter:
         y: 940
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_8
       rect:
@@ -161,8 +161,8 @@ TextureImporter:
         y: 940
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_9
       rect:
@@ -171,8 +171,8 @@ TextureImporter:
         y: 940
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_10
       rect:
@@ -181,8 +181,8 @@ TextureImporter:
         y: 760
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_11
       rect:
@@ -191,8 +191,8 @@ TextureImporter:
         y: 760
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_12
       rect:
@@ -201,8 +201,8 @@ TextureImporter:
         y: 760
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_13
       rect:
@@ -211,8 +211,8 @@ TextureImporter:
         y: 760
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_14
       rect:
@@ -221,8 +221,8 @@ TextureImporter:
         y: 760
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_15
       rect:
@@ -231,8 +231,8 @@ TextureImporter:
         y: 580
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_16
       rect:
@@ -241,8 +241,8 @@ TextureImporter:
         y: 580
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_17
       rect:
@@ -251,8 +251,8 @@ TextureImporter:
         y: 580
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_18
       rect:
@@ -261,8 +261,8 @@ TextureImporter:
         y: 580
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_19
       rect:
@@ -271,18 +271,18 @@ TextureImporter:
         y: 580
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
+        y: 399
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_21
       rect:
@@ -291,8 +291,8 @@ TextureImporter:
         y: 400
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_22
       rect:
@@ -301,8 +301,8 @@ TextureImporter:
         y: 400
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_23
       rect:
@@ -311,8 +311,8 @@ TextureImporter:
         y: 400
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_24
       rect:
@@ -321,8 +321,8 @@ TextureImporter:
         y: 400
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_25
       rect:
@@ -331,8 +331,8 @@ TextureImporter:
         y: 220
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_26
       rect:
@@ -341,8 +341,8 @@ TextureImporter:
         y: 220
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_27
       rect:
@@ -351,8 +351,8 @@ TextureImporter:
         y: 220
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_28
       rect:
@@ -361,8 +361,8 @@ TextureImporter:
         y: 220
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_29
       rect:
@@ -371,8 +371,8 @@ TextureImporter:
         y: 220
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: gaswolk_30
       rect:
@@ -381,8 +381,8 @@ TextureImporter:
         y: 40
         width: 181
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

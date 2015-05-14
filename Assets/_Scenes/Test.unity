@@ -1911,7 +1911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11455784, guid: 36948383154319c42a20df620896ac44, type: 2}
       propertyPath: m_Color.a
-      value: 1
+      value: .58431375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 36948383154319c42a20df620896ac44, type: 2}
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: .58431375}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
